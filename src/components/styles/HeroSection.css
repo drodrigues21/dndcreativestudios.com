@@ -1,0 +1,57 @@
+.main-hero-section {
+	position: relative;
+	height: calc(100vh - 80px);
+	overflow: hidden;
+
+	/* z-index: -1; */
+}
+
+.main-hero-section--img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	background-color: #000000;
+}
+
+.main-hero-section--img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 72%;
+	opacity: 0.7;
+}
+
+.main-hero-section--content {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 12rem;
+	padding: 0rem 2rem 0rem 1.5rem;
+}
+
+.main-hero-section--content h1 {
+	font-size: 3rem;
+	font-weight: 500;
+	line-height: 3.8rem;
+	color: #ffffff;
+	margin: 0 0 2rem;
+}
+
+.main-hero-section--content h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+	color: #ffffff;
+}
+
+.main-hero-section--content h2 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+.main-hero-section--phoneIcon {
+	position: absolute;
+	bottom: 2rem;
+	right: 1.5rem;
+}

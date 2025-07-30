@@ -1,0 +1,43 @@
+.main-header--contact--login {
+	display: flex;
+	align-items: center;
+	gap: 4rem;
+}
+
+.main-header--contact button {
+	width: 120px;
+	height: 40px;
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #ffffff;
+	background-color: #01c2ca;
+	border-radius: 40px;
+	border: none;
+	transition: all 300ms ease;
+	cursor: pointer;
+}
+
+.main-header--login a {
+	font-family: "Poppins", sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	color: #ffffff;
+	transition: all 300ms ease;
+}
+
+.main-header--contact button:hover {
+	background-color: #07a8b1;
+}
+
+.main-header--login a:hover {
+	color: hsl(180, 31%, 94%);
+}
+
+/* Mobile */
+@media (max-width: 1000px) {
+	.main-header--contact--login {
+		display: none;
+	}
+}

@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "../templates/app-layout";
 import Home from "../pages/Home";
+import DoctorsProfile from "../pages/DoctorsProfile";
 
 export default function AppRouter() {
 	return (
@@ -8,6 +9,7 @@ export default function AppRouter() {
 			<Routes>
 				<Route path="/" element={<AppLayout />}>
 					<Route index element={<Home />} />
+					<Route path="/doctors-profile" element={<DoctorsProfile />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
