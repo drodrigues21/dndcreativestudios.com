@@ -1,0 +1,74 @@
+.client-stats-container {
+	margin-bottom: 10rem;
+}
+
+.client-stats-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.client-stats-header--title {
+	width: 300px;
+	padding-left: 2rem;
+}
+
+.client-stats-title--en {
+	font-family: "Poppins", sans-serif;
+	font-size: 2.6rem;
+	font-weight: 600;
+	line-height: 3.2rem;
+	text-transform: capitalize;
+	color: #252525;
+	margin: 0;
+}
+
+.client-stats-title--kr {
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #979797;
+	margin: 1rem 0 0;
+}
+
+.client-stats-content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.15rem;
+	background-color: #d6d6d6;
+	border-bottom: 1.5px solid #d6d6d6;
+}
+
+.client-stats-content--item {
+	display: flex;
+	align-items: center;
+	gap: 14rem;
+	padding: 0 2rem 3rem;
+	background-color: #ffffff;
+}
+
+.client-stats-content--item:nth-child(n + 2) {
+	padding: 3rem 2rem;
+}
+
+.client-stats-content--info h3 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 4.5rem;
+	font-weight: 400;
+	line-height: 4.5rem;
+	color: #252525;
+	margin: 0;
+}
+
+.client-stats-content--info p {
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	color: #252525;
+	margin: 1rem 0 0;
+}
+
+@media (min-width: 1000px) {
+	.client-stats-header {
+		display: none;
+	}
+}

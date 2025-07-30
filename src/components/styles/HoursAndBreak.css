@@ -1,0 +1,99 @@
+.hours-and-break-container {
+	background-color: #f7f7f7;
+	padding: 4rem 0rem;
+}
+
+.hours-and-break-content--item {
+	position: relative;
+}
+
+.hours-and-break-content--item:nth-child(2) {
+	margin-top: 7rem;
+}
+
+.calendar-icon {
+	position: absolute;
+	top: -4rem;
+	left: 15rem;
+	transform: translate(-50%, -50%);
+}
+
+.hourglass-icon {
+	width: 20rem;
+	position: absolute;
+	right: 0;
+	bottom: 14rem;
+}
+
+.hours-and-break-content--item h2 {
+	font-family: "Poppins", sans-serif;
+	font-size: 2.6rem;
+	font-weight: 600;
+	line-height: 3.2rem;
+	text-transform: capitalize;
+	padding: 0 1.6rem;
+}
+
+.hours-and-break-content--item h2 span {
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #979797;
+}
+
+.hours-and-break-content--item-info {
+	background-color: #ffffff;
+	padding: 3rem 4.2rem;
+	margin: 0 1.6rem;
+}
+
+.hours-and-break-content--item-info-item {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	/* justify-content: center; */
+}
+
+.hours-and-break-content--item-info-item h3 {
+	flex: 1;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.6rem;
+	color: #5d5d5d;
+}
+
+.hours-and-break-content--item-info-item p {
+	flex: 2;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #252525;
+}
+
+.hours-and-break-content--item-info-item p span {
+	display: inline-block;
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	text-align: center;
+	color: #ffffff;
+	background-color: #01c2ca;
+	margin-left: 1rem;
+	padding: 0.5rem 1.5rem;
+	border-radius: 5rem;
+}
+
+.hours-and-break-content--item-text {
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.4rem;
+	color: #979797;
+	padding: 1.6rem;
+}
+
+@media (max-width: 1000px) {
+	.hours-and-break-image {
+		display: none;
+	}
+}

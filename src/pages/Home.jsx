@@ -1,5 +1,7 @@
-import HeroSection from "../components/HeroSection";
 import { doctorsDB } from "../data/doctorsDB";
+import HeroSection from "../components/HeroSection";
+import ClientStats from "../components/ClientStats";
+import HoursAndBreak from "../components/HoursAndBreak";
 import "../pages/styles/Home.css";
 
 export default function Home() {
@@ -8,7 +10,8 @@ export default function Home() {
 	return (
 		<main className="main-home-page">
 			<HeroSection />
-
+			<ClientStats />
+			<HoursAndBreak />
 			<div className="doctors-container">
 				{doctorsHomePage.map((doctor) => (
 					<div key={doctor.id}>
