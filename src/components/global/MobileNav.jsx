@@ -1,18 +1,27 @@
 import { useState, useEffect } from "react";
+import ConsultationForm from "./ConsultationForm";
+import OurPolicies from "./OurPolicies";
+import MessegeComfirmation from "./MessegeComfirmation";
 import upArrow from "../../assets/icons/arrow-up.svg";
 import downArrow from "../../assets/icons/arrow-down.svg";
 import mobileNavBgTop from "../../assets/icons/wave01.svg";
-// import mobileNavBgBottom01 from "../../assets/icons/wave02.svg";
-// import mobileNavBgBottom02 from "../../assets/icons/wave03.svg";
 import "../styles/MobileNav.css";
 
 export default function MobileNav() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [openSubMenus, setOpenSubMenus] = useState({});
+	const [isConsultationModalOpen, setIsConsultationModalOpen] = useState(false);
+	const [isPoliciesModalOpen, setIsPoliciesModalOpen] = useState(false);
+	const [isConfirmationModalOpen, setIsConfirmationModalOpen] = useState(false);
 
-	// Prevent body scrolling when menu is open
+	// Prevent body scrolling when menu or modals are open
 	useEffect(() => {
-		if (isMenuOpen) {
+		if (
+			isMenuOpen ||
+			isConsultationModalOpen ||
+			isPoliciesModalOpen ||
+			isConfirmationModalOpen
+		) {
 			document.body.style.overflow = "hidden";
 		} else {
 			document.body.style.overflow = "unset";
@@ -22,7 +31,12 @@ export default function MobileNav() {
 		return () => {
 			document.body.style.overflow = "unset";
 		};
-	}, [isMenuOpen]);
+	}, [
+		isMenuOpen,
+		isConsultationModalOpen,
+		isPoliciesModalOpen,
+		isConfirmationModalOpen,
+	]);
 
 	const toggleMenu = () => {
 		setIsMenuOpen(!isMenuOpen);
@@ -33,6 +47,32 @@ export default function MobileNav() {
 			...prev,
 			[itemIndex]: !prev[itemIndex],
 		}));
+	};
+
+	const openConsultationModal = () => {
+		setIsConsultationModalOpen(true);
+	};
+
+	const closeConsultationModal = () => {
+		setIsConsultationModalOpen(false);
+	};
+
+	const openPoliciesModal = () => {
+		setIsPoliciesModalOpen(true);
+	};
+
+	const closePoliciesModal = () => {
+		setIsPoliciesModalOpen(false);
+	};
+
+	const handleFormSubmit = (e) => {
+		e.preventDefault();
+		setIsConsultationModalOpen(false);
+		setIsConfirmationModalOpen(true);
+	};
+
+	const closeConfirmationModal = () => {
+		setIsConfirmationModalOpen(false);
 	};
 
 	return (
@@ -47,7 +87,7 @@ export default function MobileNav() {
 						</a>
 					</div>
 					<div className="main-nav--mobile-icon main-nav--mobile-location">
-						<a href="/">
+						<a href="#location">
 							<img src="/assets/icons/location.svg" alt="location" />
 							<span className="hamburger-text">위치</span>
 						</a>
@@ -71,11 +111,12 @@ export default function MobileNav() {
 							<span className="hamburger-text">톡상담</span>
 						</a>
 					</div>
-					<div className="main-nav--mobile-icon main-nav--mobile-customer">
-						<a href="/">
-							<img src="/assets/icons/customer-service.svg" alt="customer" />
-							<span className="hamburger-text">빠른상담</span>
-						</a>
+					<div
+						className="main-nav--mobile-icon main-nav--mobile-customer"
+						onClick={openConsultationModal}
+					>
+						<img src="/assets/icons/customer-service.svg" alt="customer" />
+						<span className="hamburger-text">빠른상담</span>
 					</div>
 				</div>
 
@@ -92,12 +133,6 @@ export default function MobileNav() {
 							<div className="mobile-menu-logo">
 								<img src="/assets/icons/mobile-nav-logo.svg" alt="logo" />
 							</div>
-							{/* <div className="main-nav--mobile-bg-bottom01">
-								<img src={mobileNavBgBottom01} alt="" />
-							</div>
-							<div className="main-nav--mobile-bg-bottom02">
-								<img src={mobileNavBgBottom02} alt="" />
-							</div> */}
 						</div>
 						<ul className="main-nav--mobile-list">
 							<li className="main-nav--mobile-item">
@@ -377,6 +412,40 @@ export default function MobileNav() {
 					</div>
 				</div>
 			</nav>
+
+			{/* Consultation Modal */}
+			{isConsultationModalOpen && (
+				<div className="modal-overlay" onClick={closeConsultationModal}>
+					<div className="modal-content" onClick={(e) => e.stopPropagation()}>
+						<ConsultationForm
+							onClose={closeConsultationModal}
+							onPoliciesClick={openPoliciesModal}
+							onSubmit={handleFormSubmit}
+						/>
+					</div>
+				</div>
+			)}
+
+			{/* Policies Modal */}
+			{isPoliciesModalOpen && (
+				<div className="modal-overlay" onClick={closePoliciesModal}>
+					<div className="modal-content" onClick={(e) => e.stopPropagation()}>
+						<OurPolicies onClose={closePoliciesModal} />
+					</div>
+				</div>
+			)}
+
+			{/* Confirmation Modal */}
+			{isConfirmationModalOpen && (
+				<div className="modal-overlay" onClick={closeConfirmationModal}>
+					<div
+						className="modal-content confirmation-modal"
+						onClick={(e) => e.stopPropagation()}
+					>
+						<MessegeComfirmation onConfirm={closeConfirmationModal} />
+					</div>
+				</div>
+			)}
 		</>
 	);
 }

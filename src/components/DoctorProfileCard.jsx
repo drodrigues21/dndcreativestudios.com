@@ -1,6 +1,6 @@
-import "./styles/DoctorCard.css";
+import "./styles/DoctorProfileCard.css";
 
-export default function DoctorCard({ doctor }) {
+export default function DoctorProfileCard({ doctor }) {
 	// console.log(doctor);
 	return (
 		<div className="doctor-profile-container">

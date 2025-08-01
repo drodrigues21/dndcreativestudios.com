@@ -1,4 +1,4 @@
-import DoctorCard from "../components/DoctorCard";
+import DoctorProfileCard from "../components/DoctorProfileCard";
 import { doctorsDB } from "../data/doctorsDB";
 import "./styles/DoctorsProfile.css";
 
@@ -22,7 +22,7 @@ export default function DoctorsProfile() {
 				<div className="doctors-profile-title--cards">
 					{prosthodontists.map((doctor) => (
 						<div className="doctors-profile--card" key={doctor.id}>
-							<Doc torCard doctor={doctor} />
+							<DoctorProfileCard doctor={doctor} />
 						</div>
 					))}
 				</div>
@@ -36,7 +36,7 @@ export default function DoctorsProfile() {
 				<div className="doctors-profile-title--cards">
 					{orthodontists.map((doctor) => (
 						<div className="doctors-profile--card" key={doctor.id}>
-							<DoctorCard doctor={doctor} />
+							<DoctorProfileCard doctor={doctor} />
 						</div>
 					))}
 				</div>

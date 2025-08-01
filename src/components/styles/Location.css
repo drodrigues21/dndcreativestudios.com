@@ -1,0 +1,141 @@
+.location-container {
+	margin-top: 3rem;
+	padding: 1.5rem;
+}
+
+.location-container--title h2 {
+	font-family: "Poppins", sans-serif;
+	font-size: 2.6rem;
+	font-weight: 600;
+	line-height: 3.2rem;
+	text-transform: capitalize;
+	color: #252525;
+	margin-bottom: 0;
+}
+
+.location-container--title span {
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #979797;
+}
+
+.location-container--title p {
+	width: 30rem;
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 3rem;
+	color: #000000;
+}
+
+.location-container--title p svg {
+	margin-left: 1rem;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	opacity: 1;
+}
+
+/* .location-container--title p svg:hover {
+	opacity: 1;
+	transform: scale(1.1);
+} */
+
+.location-container--title p svg:active {
+	transform: scale(0.95);
+}
+
+.copy-success-message {
+	display: inline-block;
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: #62bed0;
+	animation: fadeInOut 2s ease;
+}
+
+@keyframes fadeInOut {
+	0% {
+		opacity: 0;
+		transform: translateX(-5px);
+	}
+	20% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	80% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	100% {
+		opacity: 0;
+		transform: translateX(5px);
+	}
+}
+
+.location-container--map-cta {
+	display: none;
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #ffffff;
+	background-color: #000000;
+	padding: 1rem 2rem;
+}
+
+.location-container--map-cta svg {
+	margin: 0 4rem 0 2rem;
+}
+
+.location-container--map-cta-mobile {
+	display: block;
+	width: 100%;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 4rem;
+	text-align: center;
+	color: #ffffff;
+	background-color: #000000;
+	margin-top: 4rem;
+	padding: 1.25rem 0rem;
+}
+
+.location-container--caution {
+	margin: 7.5rem 0rem;
+	padding: 3.5rem 3rem;
+	background-color: #d5d5d58f;
+	background-image: url("/assets/images/mainpage/caution_bg.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.location-container--caution-title-en {
+	font-family: "Poppins", sans-serif;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.4rem;
+	text-transform: uppercase;
+	color: #000000;
+	margin: 0 0 0.8rem;
+}
+
+.location-container--caution-title-kr {
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+	color: #252525;
+	margin: 0;
+}
+
+.location-container--caution-title-kr svg {
+	margin-left: 2rem;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	opacity: 1;
+}
+
+@media (min-width: 1000px) {
+	.location-container--map-cta {
+		display: block;
+	}
+}

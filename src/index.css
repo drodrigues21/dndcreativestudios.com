@@ -24,7 +24,6 @@
 	--color-pink: #ef59f4;
 	--color-light-pink: #f4eff8;
 	--color-white: #ffffff;
-	font-size: 10px;
 }
 
 *,
@@ -38,6 +37,7 @@ html {
 	-webkit-text-size-adjust: none;
 	text-size-adjust: none;
 	scroll-behavior: smooth;
+	font-size: 62.5%;
 }
 
 body {

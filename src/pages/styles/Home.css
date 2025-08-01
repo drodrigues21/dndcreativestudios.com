@@ -1,3 +1,94 @@
 .main-home-page {
 	position: relative;
 }
+
+.doctors-container {
+	padding: 0 1.6rem;
+}
+
+.doctors-container--title-en {
+	font-family: "Poppins", sans-serif;
+	font-size: 2.6rem;
+	font-weight: 600;
+	line-height: 3.2rem;
+	color: #252525;
+	margin: 12rem 0 1rem;
+}
+
+.doctors-container--title-kr {
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #979797;
+	margin: 0 0 4.2rem;
+}
+
+.doctors-container--cards {
+	display: flex;
+	gap: 3rem;
+	overflow-x: auto;
+	overflow-y: hidden;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+	padding: 2rem 0 8rem;
+	margin: 0 -1.6rem;
+	padding-left: 1.6rem;
+	padding-right: 1.6rem;
+}
+
+.doctors-container--cards::-webkit-scrollbar {
+	display: none;
+}
+
+.doctors-container--cards {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.doctors-container--button {
+	text-align: center;
+	background-color: #252525;
+	padding: 1.6rem 2.4rem;
+	margin-bottom: 12rem;
+}
+
+.doctors-container--button a {
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.4rem;
+	color: #ffffff;
+}
+
+.before-and-after-home--container {
+	background-color: #f2f2f2;
+	padding: 6rem 1.6rem;
+}
+
+.before-and-after-home--title-en {
+	font-family: "Poppins", sans-serif;
+	font-size: 2.6rem;
+	font-weight: 600;
+	line-height: 3.2rem;
+	color: #252525;
+	margin: 0 0 1rem;
+}
+
+.before-and-after-home--title-kr {
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #979797;
+	margin: 0 0 4.2rem;
+}
+
+.before-and-after-home--notice {
+	margin: 3.5rem 0.5rem;
+}
+
+.before-and-after-home--notice p {
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 1.2rem;
+	color: #b0b0b0;
+	/* margin: 1rem 0; */
+}
