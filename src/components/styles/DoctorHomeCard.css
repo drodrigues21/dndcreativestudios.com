@@ -1,0 +1,92 @@
+.doctor-home-card--container {
+	display: flex;
+	flex-direction: column;
+	width: 20rem;
+	flex-shrink: 0;
+	scroll-snap-align: start;
+}
+
+.doctor-home-card--image {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3rem;
+}
+
+.doctor-home-card--image img {
+	width: 100%;
+	height: auto;
+}
+
+.doctor-home-card--info {
+	margin-bottom: 2rem;
+}
+
+.doctor-home-card--info-name {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.doctor-home-card--info-name h3 {
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: 1.4rem;
+	color: #000000;
+	margin: 0;
+}
+
+.doctor-home-card--container:nth-child(2) .doctor-home-card--info-name h3 {
+	font-size: 1.6rem;
+}
+
+.doctor-home-card--info-name h4 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 1.4rem;
+	color: #000000;
+	margin: 0;
+}
+
+.doctor-home-card--container:nth-child(2) .doctor-home-card--info-name h4 {
+	font-size: 1.6rem;
+}
+
+.doctor-home-card--info p {
+	font-size: 1.4rem;
+	line-height: 2.2rem;
+	color: #979797;
+	margin: 0 0 0.5rem 0;
+}
+
+.doctor-home-card--container:nth-child(2) .doctor-home-card--info p {
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+
+.doctor-home-card--info-button {
+	margin-top: auto;
+}
+
+.doctor-home-card--info-button a {
+	display: inline-block;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.4rem;
+	color: #252525;
+	text-decoration: none;
+	padding: 2rem 0 1rem;
+	border-bottom: 2px solid #252525;
+	transition: all 0.3s ease;
+}
+
+.doctor-home-card--container:nth-child(2) .doctor-home-card--info-button a {
+	font-size: 1.2rem;
+}
+
+.doctor-home-card--info-button a:hover {
+	color: #666;
+	border-bottom-color: #666;
+}
