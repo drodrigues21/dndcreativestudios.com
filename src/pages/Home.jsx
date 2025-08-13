@@ -1,5 +1,6 @@
 import { doctorsDB } from "../data/doctorsDB";
-import HeroSection from "../components/HeroSection";
+import { Link } from "react-router-dom";
+import HeroHomeSection from "../components/HeroHomeSection";
 import ClientStats from "../components/ClientStats";
 import HoursAndBreak from "../components/HoursAndBreak";
 import DoctorHomeCard from "../components/DoctorHomeCard";
@@ -12,7 +13,7 @@ export default function Home() {
 
 	return (
 		<main className="main-home-page">
-			<HeroSection />
+			<HeroHomeSection />
 			<ClientStats />
 			<HoursAndBreak />
 			<div className="doctors-container">
@@ -24,7 +25,7 @@ export default function Home() {
 					))}
 				</div>
 				<div className="doctors-container--button">
-					<a href="">의료진 전체보기</a>
+					<Link to="/doctors-profile">의료진 전체보기</Link>
 				</div>
 			</div>
 			<div className="before-and-after-home--container">

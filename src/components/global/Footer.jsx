@@ -2,6 +2,7 @@ import instagramIcon from "/assets/icons/instagram.svg";
 import facebookIcon from "/assets/icons/facebook.svg";
 import blogIcon from "/assets/icons/blog.svg";
 import logo from "/assets/images/logo/logo.png";
+import { Link } from "react-router-dom";
 import "../styles/Footer.css";
 
 export default function Footer() {
@@ -28,15 +29,15 @@ export default function Footer() {
 					</div>
 				</div>
 				<div className="footer-socials">
-					<a href="/">
+					<Link to="/">
 						<img src={instagramIcon} alt="Instagram" />
-					</a>
-					<a href="/">
+					</Link>
+					<Link to="/">
 						<img src={facebookIcon} alt="Facebook" />
-					</a>
-					<a href="/">
+					</Link>
+					<Link to="/">
 						<img src={blogIcon} alt="Blog" />
-					</a>
+					</Link>
 				</div>
 			</div>
 			<div className="footer-container--copyright">

@@ -100,13 +100,17 @@
 }
 
 .location-container--caution {
-	margin: 7.5rem 0rem;
-	padding: 3.5rem 3rem;
 	background-color: #d5d5d58f;
 	background-image: url("/assets/images/mainpage/caution_bg.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	margin: 7.5rem 0rem;
+}
+
+.location-container--caution-cta {
+	display: block;
+	padding: 3.5rem 3rem;
 }
 
 .location-container--caution-title-en {
@@ -129,7 +133,6 @@
 
 .location-container--caution-title-kr svg {
 	margin-left: 2rem;
-	cursor: pointer;
 	transition: all 0.2s ease;
 	opacity: 1;
 }

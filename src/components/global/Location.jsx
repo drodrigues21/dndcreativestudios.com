@@ -1,12 +1,13 @@
 import mapImg from "/assets/images/mainpage/navermap.jpg";
 import "../styles/Location.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Location() {
 	const [copySuccess, setCopySuccess] = useState(false);
 
 	const copyToClipboard = async () => {
-		const textToCopy = "서울시 서초구 서초대로 77길 17 BLOCK77 빌딩 5층";
+		const textToCopy = "서울시 서초구 서초대로 77길 17";
 
 		try {
 			await navigator.clipboard.writeText(textToCopy);
@@ -51,20 +52,20 @@ export default function Location() {
 						style={{ cursor: "pointer", marginLeft: "8px" }}
 						title="Click to copy address"
 					>
-						<g clip-path="url(#clip0_64_1210)">
+						<g clipPath="url(#clip0_64_1210)">
 							<path
 								d="M13 1H1V14"
 								stroke="black"
-								stroke-width="1.2"
-								stroke-linecap="square"
-								stroke-linejoin="round"
+								strokeWidth="1.2"
+								strokeLinecap="square"
+								strokeLinejoin="round"
 							/>
 							<path
 								d="M5 5H17V17C17 17.5304 16.7893 18.0391 16.4142 18.4142C16.0391 18.7893 15.5304 19 15 19H7C6.46957 19 5.96086 18.7893 5.58579 18.4142C5.21071 18.0391 5 17.5304 5 17V5Z"
 								stroke="black"
-								stroke-width="1.2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
+								strokeWidth="1.2"
+								strokeLinecap="round"
+								strokeLinejoin="round"
 							/>
 						</g>
 						<defs>
@@ -87,7 +88,7 @@ export default function Location() {
 						</span>
 					)}
 				</p>
-				<a href="/" className="location-container--map-cta">
+				<Link to="/" className="location-container--map-cta">
 					네이버 지도 바로 열기
 					<svg
 						width="31"
@@ -105,33 +106,41 @@ export default function Location() {
 							fill="white"
 						/>
 					</svg>
-				</a>
+				</Link>
 			</div>
 			<div className="location-container--map">
 				<img src={mapImg} alt="White Dream Dental Clinic location" />
 			</div>
-			<a href="/" className="location-container--map-cta-mobile">
+			<a
+				href="https://map.naver.com/p/entry/place/35700929?c=15.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202508111712&locale=ko&svcName=map_pcv5"
+				className="location-container--map-cta-mobile"
+			>
 				네이버 지도 바로 열기
 			</a>
 			<div className="location-container--caution">
-				<h4 className="location-container--caution-title-en">Caution</h4>
-				<h4 className="location-container--caution-title-kr">
-					화이트드림 주의사항
-					<svg
-						width="41"
-						height="16"
-						viewBox="0 0 41 16"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M1 8L39.789 8M33.013 0.999999L40 8L33.012 15"
-							stroke="#252525"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-					</svg>
-				</h4>
+				<a
+					href="https://wdreamdc.com/guide.php"
+					className="location-container--caution-cta"
+				>
+					<h4 className="location-container--caution-title-en">Caution</h4>
+					<h4 className="location-container--caution-title-kr">
+						화이트드림 주의사항
+						<svg
+							width="41"
+							height="16"
+							viewBox="0 0 41 16"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M1 8L39.789 8M33.013 0.999999L40 8L33.012 15"
+								stroke="#252525"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+							/>
+						</svg>
+					</h4>
+				</a>
 			</div>
 		</div>
 	);

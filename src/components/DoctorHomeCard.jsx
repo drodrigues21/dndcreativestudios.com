@@ -1,4 +1,5 @@
 import "./styles/DoctorHomeCard.css";
+import { Link } from "react-router-dom";
 
 export default function DoctorHomeCard({ doctor }) {
 	return (
@@ -15,7 +16,7 @@ export default function DoctorHomeCard({ doctor }) {
 				<p>{doctor.description[1]}</p>
 			</div>
 			<div className="doctor-home-card--info-button">
-				<a href="#">View profile</a>
+				<Link to={`/doctors/${doctor.id}`}>View profile</Link>
 			</div>
 		</div>
 	);
