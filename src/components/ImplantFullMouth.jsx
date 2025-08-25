@@ -1,16 +1,21 @@
+import HeaderSection from "./global/HeaderSection";
+import HeroSection from "./global/HeroSection";
+import CircleCards from "./global/CircleCards";
 import "./styles/ImplantFullMouth.css";
 
 export default function ImplantFullMouth() {
 	return (
 		<div className="implant-fullmouth">
-			<section className="hero">
-				<img
-					src="/assets/images/full-mouth-implant/fullmouthimplant_heroimg.jpg"
-					alt="Full mouth implant hero"
-				/>
-				<div className="content">
-					<h1>전체임플란트</h1>
-					<p>전체 치아의 기능과 심미를 동시에 회복</p>
+			<HeaderSection />
+			<section className="hero-section">
+				<HeroSection />
+				<div className="hero-section--content-container">
+					<h2 className="hero-section--title-kr">임플란트란?</h2>
+					<p className="hero-section--content-text">
+						상실한 자연치아를 대체하기 위해 잇몸뼈에 직접
+						<span>인공 치근을 식립하여 치아를 복원하는데 도움을 주는</span>
+						<span>대표적인 치료 방법입니다.</span>
+					</p>
 				</div>
 			</section>
 			<section className="benefits">
@@ -34,26 +39,11 @@ export default function ImplantFullMouth() {
 					/>
 				</div>
 			</section>
-			<section className="recommend">
-				<h2>이런 분께 추천드려요</h2>
-				<div className="grid">
-					<img
-						src="/assets/images/full-mouth-implant/fullmouthimplant_recommend01.png"
-						alt="추천 1"
-					/>
-					<img
-						src="/assets/images/full-mouth-implant/fullmouthimplant_recommend02.png"
-						alt="추천 2"
-					/>
-					<img
-						src="/assets/images/full-mouth-implant/fullmouthimplant_recommend03.png"
-						alt="추천 3"
-					/>
-					<img
-						src="/assets/images/full-mouth-implant/fullmouthimplant_recommend04.png"
-						alt="추천 4"
-					/>
-				</div>
+			<section className="section-recommend implant-fullmouth--recommend">
+				<h2 className="section-title implant-fullmouth--recommend-title">
+					Recommend <span>이런경우 추천해요</span>
+				</h2>
+				<CircleCards />
 			</section>
 		</div>
 	);

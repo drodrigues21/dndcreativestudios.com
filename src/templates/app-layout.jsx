@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import ScrollToTop from "../routes/ScrollToTop";
 import Header from "../components/global/Header";
 import MobileNav from "../components/global/MobileNav";
 import TopNavbar from "../components/global/TopNavbar";
@@ -11,6 +12,7 @@ export default function AppLayout() {
 			<Header />
 			<TopNavbar />
 			<MobileNav />
+			<ScrollToTop />
 			<div className="container">
 				<BreadcrumbBar />
 				<Outlet />

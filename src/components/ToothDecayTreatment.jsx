@@ -1,17 +1,13 @@
+import HeaderSection from "./global/HeaderSection";
+import HeroSection from "./global/HeroSection";
 import "./styles/ToothDecayTreatment.css";
 
 export default function ToothDecayTreatment() {
 	return (
 		<div className="treat-toothdecay">
-			<section className="hero">
-				<img
-					src="/assets/images/tooth-decay-treatment/toothdecaytreatment_heroimg.jpg"
-					alt="Tooth decay hero"
-				/>
-				<div className="content">
-					<h1>충치치료</h1>
-					<p>초기부터 정확한 진단과 치료</p>
-				</div>
+			<HeaderSection />
+			<section className="hero-section">
+				<HeroSection />
 			</section>
 			<section className="stages">
 				<h2>충치 진행 단계</h2>

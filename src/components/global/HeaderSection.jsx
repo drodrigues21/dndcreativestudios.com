@@ -1,23 +1,11 @@
 import { headersDB } from "../../data/headersDB";
-import { useMemo } from "react";
-import { useLocation } from "react-router-dom";
+import { usePathMappedRecord } from "../../hooks/usePathMappedRecord";
 import "../styles/HeaderSection.css";
 
-// Precompute path→header pairs from headersDB.paths for efficient lookup
-const PATH_HEADER_PAIRS = headersDB.flatMap((header) =>
-	(header.paths || []).map((p) => [p, header])
-);
-
 export default function HeaderSection() {
-	const { pathname } = useLocation();
-
-	const currentHeader = useMemo(() => {
-		// Prefer the most specific (longest) matching path prefix
-		const matched = [...PATH_HEADER_PAIRS]
-			.sort((a, b) => b[0].length - a[0].length)
-			.find(([path]) => pathname === path || pathname.startsWith(`${path}/`));
-		return matched ? matched[1] : headersDB[0];
-	}, [pathname]);
+	const currentHeader = usePathMappedRecord(headersDB, {
+		fallback: headersDB[0],
+	});
 
 	return (
 		<section className="header-section">

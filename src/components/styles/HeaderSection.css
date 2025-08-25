@@ -1,0 +1,40 @@
+.header-section {
+	/* width: 100%;
+	height: 100%; */
+
+	/* border: 3px solid red; */
+}
+
+.header-section--container {
+	padding: 0 2rem;
+}
+
+.header-section--title_eng {
+	font-size: 1.4rem;
+	font-weight: 600;
+	line-height: 1.4rem;
+	text-transform: uppercase;
+	color: #b0b0b0;
+}
+
+.header-section--title_eng::after {
+	content: "";
+	display: block;
+	width: 3rem;
+	height: 5px;
+	background-color: #bee6e4;
+	margin-top: 1rem;
+}
+
+.header-section--title_kr {
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 2rem;
+	color: #000;
+}
+
+@media (min-width: 1000px) {
+	.header-section--container {
+		border: 3px solid red;
+	}
+}

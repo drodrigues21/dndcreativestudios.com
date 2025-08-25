@@ -42,9 +42,6 @@
 	display: none;
 }
 
-/* .doctors-container--cards {
-} */
-
 .doctors-container--button {
 	text-align: center;
 	background-color: #252525;
@@ -90,5 +87,4 @@
 	font-weight: 500;
 	line-height: 1.2rem;
 	color: #b0b0b0;
-	/* margin: 1rem 0; */
 }

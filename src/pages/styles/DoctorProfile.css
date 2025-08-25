@@ -1,0 +1,128 @@
+.doctor-profile-header {
+	display: none;
+}
+
+/* Doctor Profile Not Found */
+
+.page-doctor-profile--not-found {
+	padding: 3rem 1.5rem 2rem;
+}
+
+.page-doctor-profile--not-found h2 {
+	height: 22vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 2.4rem;
+	color: #252525;
+}
+
+.page-doctor-profile--not-found img {
+	padding: 1.7rem 1.5rem;
+	scale: 1.1;
+}
+/* Doctor Profile Not Found End */
+
+/* Doctor Profile */
+.doctor-profile-hero--img {
+	position: relative;
+	z-index: 100;
+}
+
+.back-btn {
+	position: absolute;
+	top: 1.7rem;
+	left: 1.5rem;
+	padding: 1.5rem 1rem;
+	z-index: 1000;
+}
+
+.back-btn img {
+	scale: 1.1;
+}
+
+.doctor-profile-hero--info {
+	padding: 2rem 1.5rem 0 2rem;
+}
+
+.doctor-profile-hero--info-title {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 4.5rem;
+}
+
+.doctor-profile-hero--info-title h1,
+.doctor-profile-hero--info-title h2 {
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 2.4rem;
+	color: #252525;
+	margin: 0;
+}
+
+.doctor-profile-hero--info-title h2 {
+	font-weight: 500;
+}
+
+.doctor-profile-hero--info-specialty h3 {
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #979797;
+	margin: 0 0 0.8rem;
+}
+
+.doctor-profile-hero--info-description {
+	position: relative;
+	margin-bottom: 4.3rem;
+}
+
+.doctor-profile-hero--info-description::before {
+	content: "";
+	display: inline-block;
+	width: 4.5rem;
+	height: 0.5rem;
+	background-color: #bee6e4;
+	position: absolute;
+	top: -1.25rem;
+	left: 0;
+}
+
+.doctor-profile-hero--info p {
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 2.2rem;
+	color: #979797;
+	margin: 0;
+}
+
+.doctor-profile-hero--info-list {
+	list-style: disc;
+	padding: 0 2rem 12rem;
+}
+
+.doctor-profile-hero--info-list li {
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 3.8rem;
+	color: #252525;
+
+	/* margin: 0; */
+}
+
+@media (min-width: 1000px) {
+	.main-header--logo {
+		display: block;
+	}
+
+	.doctor-profile-header {
+		display: block;
+	}
+
+	.back-btn {
+		display: none;
+	}
+}

@@ -2,20 +2,6 @@
 	display: none;
 }
 
-/* Desktop only */
-@media (min-width: 1000px) {
-	.breadcrumb-bar {
-		display: block;
-		width: 100%;
-		padding: var(--space-6) 0;
-		/* border-bottom: 1px solid var(--border); */
-		/* background: var(--surface); */
-		/* position: sticky; */
-		/* top: 0; */
-		/* z-index: var(--z-sticky); */
-	}
-}
-
 .breadcrumb {
 	display: flex;
 	gap: var(--space-2);
@@ -47,4 +33,18 @@
 	font-size: var(--fs-kr-1);
 	font-weight: var(--fw-semibold);
 	color: var(--text-secondary);
+}
+
+/* Desktop only */
+@media (min-width: 1000px) {
+	.breadcrumb-bar {
+		display: block;
+		width: 100%;
+		padding: var(--space-6) 0;
+		/* border-bottom: 1px solid var(--border); */
+		/* background: var(--surface); */
+		/* position: sticky; */
+		/* top: 0; */
+		/* z-index: var(--z-sticky); */
+	}
 }

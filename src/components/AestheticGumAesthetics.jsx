@@ -1,16 +1,20 @@
+import HeaderSection from "./global/HeaderSection";
+import HeroSection from "./global/HeroSection";
 import "./styles/AestheticGumAesthetics.css";
 
 export default function AestheticGumAesthetics() {
 	return (
 		<div className="aesthetic-gum">
-			<section className="hero">
-				<img
-					src="/assets/images/gum-aesthetic/gumaesthtic_heroimg.jpg"
-					alt="Gum aesthetics hero"
-				/>
-				<div className="content">
-					<h1>잇몸성형</h1>
-					<p>균형 잡힌 미소선을 위한 잇몸 라인 개선</p>
+			<HeaderSection />
+			<section className="hero-section">
+				<HeroSection />
+				<div className="hero-section--content-container">
+					<h2 className="hero-section--title-kr">임플란트란?</h2>
+					<p className="hero-section--content-text">
+						상실한 자연치아를 대체하기 위해 잇몸뼈에 직접
+						<span>인공 치근을 식립하여 치아를 복원하는데 도움을 주는</span>
+						<span>대표적인 치료 방법입니다.</span>
+					</p>
 				</div>
 			</section>
 			<section className="recommend">

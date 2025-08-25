@@ -1,1 +1,127 @@
+.page-aboutus {
+	/* padding: 0 2rem; */
+}
 
+.page-aboutus--title {
+	font-family: var(--font-en-1);
+	font-size: 5.2rem;
+	font-weight: 300;
+	line-height: 7rem;
+	text-transform: capitalize;
+	color: #000;
+	margin: 4.8rem 2rem 5rem;
+}
+
+.page-aboutus--hero-img {
+	width: 100%;
+	height: 100%;
+}
+
+.page-aboutus--hero-img {
+	/* background-color: #b0b0b0; */
+}
+
+.page-aboutus--hero-section,
+.page-aboutus--section-2--content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	padding: 0 2rem;
+	margin-bottom: 13rem;
+}
+
+.page-aboutus--section--title,
+.page-aboutus--section-2--sub-title {
+	max-width: 25rem;
+	font-size: 2.2rem;
+	font-weight: 400;
+	line-height: 3.4rem;
+	text-align: right;
+}
+
+.page-aboutus--section--text,
+.page-aboutus--section-2--text {
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+	text-align: right;
+}
+
+.page-aboutus--section--text span,
+.page-aboutus--section-2--text span {
+	display: block;
+}
+
+.page-aboutus--section-1--img {
+	display: flex;
+	gap: 0.2rem;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.page-aboutus--section-1--img img {
+	width: 55%;
+}
+
+.page-aboutus--section-1--content,
+.page-aboutus--section-2--content {
+	padding: 0 2rem;
+}
+
+.page-aboutus--section-1--title,
+.page-aboutus--section-2--sub-title {
+	font-size: 2.2rem;
+	font-weight: 400;
+	line-height: 3.4rem;
+	margin-bottom: 3rem;
+}
+
+.page-aboutus--section-1--title span {
+	display: block;
+}
+
+.page-aboutus--section-1--text,
+.page-aboutus--section-2--text {
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+	margin-bottom: 2rem;
+}
+
+.page-aboutus--section-1--text span {
+	display: block;
+}
+
+.page-aboutus--section-2 {
+	margin-bottom: 20rem;
+}
+
+.page-aboutus--section-2--title {
+	font-family: var(--font-en-1);
+	font-size: 5.2rem;
+	font-weight: 300;
+	line-height: 7rem;
+	text-transform: capitalize;
+	color: #000;
+	margin: 10rem 2rem 5rem;
+}
+
+.page-aboutus--section-2--hero img {
+	width: 100%;
+}
+
+.page-aboutus--section-2--hero-img-desktop {
+	display: none;
+}
+
+.page-aboutus--section-2--sub-title {
+	min-width: 40rem;
+	margin: 2rem 0 2.5rem;
+}
+
+.page-aboutus--section-2--text {
+	margin-bottom: 0.75rem;
+}
+
+.page-aboutus--section-2--sub-title span {
+	display: block;
+}

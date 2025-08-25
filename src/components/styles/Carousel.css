@@ -1,0 +1,40 @@
+.carousel {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.carousel-track {
+	width: 100%;
+	max-width: 180rem;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	gap: 2rem;
+	margin: 0 auto;
+	padding: 2rem 0;
+	transition: transform 300ms ease;
+	overflow: hidden;
+
+	/* interaction ergonomics */
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: pan-y;
+}
+
+.carousel-item {
+	flex: 0 0 auto;
+	width: clamp(28rem, 30vw, 58rem);
+	transform: scale(0.9);
+	transition: transform 300ms ease;
+}
+
+.carousel-item.is-center {
+	transform: scale(1.2);
+}
+
+@media (min-width: 1000px) {
+	.carousel-track {
+		padding: 4rem 0;
+	}
+}

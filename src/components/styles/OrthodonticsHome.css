@@ -1,0 +1,159 @@
+.ortho-section-recommend--title {
+	font-family: var(--font-en-1);
+	font-size: 2.6rem;
+	font-weight: 600;
+	line-height: 3.2rem;
+	margin: 7rem 0 4.5rem;
+	padding: 0 2rem;
+}
+
+.ortho-section-recommend--title span {
+	display: block;
+	font-family: var(--font-kr);
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #979797;
+}
+
+.ortho-section-recommend--cards-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.25rem;
+	margin: 0 0 10rem;
+	padding: 0 1.5rem;
+}
+
+.ortho-section-recommend--card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #f2f2f2;
+	padding: 2rem;
+}
+
+.ortho-section-recommend--card h3 {
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: 1.8rem;
+	color: #01c2ca;
+	margin: 1.5rem 0 1rem;
+}
+
+.ortho-section-recommend--card p {
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 2rem;
+	color: #404040;
+	margin: 0 0 0.25rem;
+}
+
+.ortho-beforeafter {
+	padding: 0 2rem;
+}
+
+.ortho-beforeafter--title,
+.ortho-section--types-of-braces--title {
+	font-family: var(--font-en-1);
+	font-size: 2.6rem;
+	font-weight: 600;
+	line-height: 3.2rem;
+}
+
+.ortho-beforeafter--title span,
+.ortho-section--types-of-braces--title span {
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #979797;
+}
+
+.before-and-after-ortho--notice {
+	width: 24rem;
+	margin-bottom: 10rem;
+}
+
+.before-and-after-ortho--notice p {
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 2rem;
+	color: #b0b0b0;
+}
+
+.ortho-section--types-of-braces {
+	margin-bottom: 13rem;
+	padding: 0 2rem;
+}
+
+.ortho-section--types-of-braces--title span {
+	margin-top: 0.75rem;
+}
+
+.ortho-section--types-of-braces--card {
+	margin-bottom: 1rem;
+	padding: 2.5rem 3rem;
+}
+
+.ortho-section--types-of-braces--card:nth-child(odd) {
+	background-color: #ecf5f5;
+}
+
+.ortho-section--types-of-braces--card:nth-child(even) {
+	background-color: #f4eff8;
+}
+
+.ortho-section--types-of-braces--card-img {
+	display: none;
+}
+
+.ortho-section--types-of-braces--card h3 {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: 2.2rem;
+	font-weight: 500;
+	line-height: 2.2rem;
+	color: #404040;
+	margin: 0 0 2.5rem;
+}
+
+.pill--container {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+}
+
+.ortho-section--types-of-braces--card p {
+	flex: 3;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 2.4rem;
+	color: #404040;
+	margin: 0 0 2.5rem;
+}
+
+.card--black-pill,
+.card-white--pill {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	margin-right: 1.2rem;
+	padding: 1rem 0.5rem;
+	border-radius: 4rem;
+}
+
+.card--black-pill {
+	color: #fff;
+	background-color: #404040;
+}
+
+.card-white--pill {
+	color: #404040;
+	background-color: #fff;
+}

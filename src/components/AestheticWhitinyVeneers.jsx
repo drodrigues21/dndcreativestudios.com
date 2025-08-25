@@ -1,16 +1,20 @@
+import HeaderSection from "./global/HeaderSection";
+import HeroSection from "./global/HeroSection";
 import "./styles/AestheticWhitinyVeneers.css";
 
 export default function AestheticWhitinyVeneers() {
 	return (
 		<div className="aesthetic-veneers">
-			<section className="hero">
-				<img
-					src="/assets/images/veneers/veneers_heroimg.jpg"
-					alt="Veneers hero"
-				/>
-				<div className="content">
-					<h1>화이트니 라미네이트</h1>
-					<p>얇고 자연스러운 심미 보철</p>
+			<HeaderSection />
+			<section className="hero-section">
+				<HeroSection />
+				<div className="hero-section--content-container">
+					<h2 className="hero-section--title-kr">임플란트란?</h2>
+					<p className="hero-section--content-text">
+						상실한 자연치아를 대체하기 위해 잇몸뼈에 직접
+						<span>인공 치근을 식립하여 치아를 복원하는데 도움을 주는</span>
+						<span>대표적인 치료 방법입니다.</span>
+					</p>
 				</div>
 			</section>
 			<section className="benefits">
