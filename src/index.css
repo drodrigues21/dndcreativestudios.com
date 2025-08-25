@@ -136,3 +136,7 @@ img {
 	max-width: 100%;
 	display: block;
 }
+
+.container {
+	margin-bottom: 13rem;
+}

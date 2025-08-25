@@ -1,20 +1,11 @@
 import HeaderSection from "./global/HeaderSection";
 import HeroSection from "./global/HeroSection";
-import { heroSection } from "../data/HeroSection";
-import { usePathMappedRecord } from "../hooks/usePathMappedRecord";
-import { benefitsDB } from "../data/benefitsAndSymptomsDB";
+import BenefitsAndSymptoms from "./global/BenefitsAndSymptoms";
 import specialistPic from "/assets/images/invisalign/invisalign_docpic.jpg";
 import specialistPicMobile from "/assets/images/invisalign/invisalign_docpic-mobile.png";
 import "./styles/OrthodonticsInvisalign.css";
 
 export default function OrthodonticsInvisalign() {
-	const currentHeroSection = usePathMappedRecord(heroSection, {
-		getPaths: (item) => item.routes || item.paths || [],
-		fallback: heroSection[0],
-	});
-
-	const benefits = benefitsDB.filter((item) => item.section === "invisalign");
-
 	return (
 		<div className="ortho-invisalign">
 			<HeaderSection />
@@ -36,18 +27,8 @@ export default function OrthodonticsInvisalign() {
 				<h2 className="section-title invis-section-benefits--title">
 					Benefits <span>인비절라인 장점</span>
 				</h2>
-				<div className="invis-section-benefits--cards-container">
-					{benefits.map((item) => (
-						<div className="invis-section-benefits--card" key={item.id}>
-							<div className="invis-section-benefits--card-img">
-								<img src={item.icon} alt={item.title} />
-							</div>
-							<div className="invis-section-benefits--card-content">
-								<h3>{item.title}</h3>
-								<p>{item.description}</p>
-							</div>
-						</div>
-					))}
+				<div className="benefits-cards--invisalign">
+					<BenefitsAndSymptoms />
 				</div>
 			</section>
 

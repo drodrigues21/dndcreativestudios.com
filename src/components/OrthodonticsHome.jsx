@@ -1,22 +1,11 @@
 import HeaderSection from "./global/HeaderSection";
 import HeroSection from "./global/HeroSection";
-import { heroSection } from "../data/HeroSection";
-import { usePathMappedRecord } from "../hooks/usePathMappedRecord";
 import { orthodonticsDB } from "../data/orthodonticsDB";
-import { squareCardsDB } from "../data/squareCardsDB";
+import SquareCards from "./global/SquareCards";
 import BeforeAndAfterCard from "./global/BeforeAndAfterCard";
 import "./styles/OrthodonticsHome.css";
 
 export default function OrthodonticsHome() {
-	// const currentHeroSection = usePathMappedRecord(heroSection, {
-	// 	getPaths: (item) => item.routes || item.paths || [],
-	// 	fallback: heroSection[0],
-	// });
-
-	const typesOfBraces = squareCardsDB.filter(
-		(item) => item.section === "braces"
-	);
-
 	return (
 		<div className="ortho-home">
 			<HeaderSection />
@@ -72,30 +61,8 @@ export default function OrthodonticsHome() {
 				<h2 className="ortho-section--types-of-braces--title">
 					Types of Braces <span>교정치료 종류</span>
 				</h2>
-				<div className="ortho-section--types-of-braces--cards-container">
-					{typesOfBraces.map((item) => (
-						<div className="ortho-section--types-of-braces--card" key={item.id}>
-							<img
-								className="ortho-section--types-of-braces--card-img"
-								src={item.image}
-								alt={item.title}
-							/>
-							<h3>
-								{item.title}
-								<span>
-									<img src={item.icon} alt="" />
-								</span>
-							</h3>
-							<div className="pill--container">
-								<span className="card--black-pill">{item.blackPill}</span>
-								<p>{item.advantage}</p>
-							</div>
-							<div className="pill--container">
-								<span className="card-white--pill">{item.whitePill}</span>
-								<p>{item.disadvantage}</p>
-							</div>
-						</div>
-					))}
+				<div className="types-of-braces--ortho">
+					<SquareCards />
 				</div>
 			</section>
 		</div>

@@ -1,6 +1,7 @@
 import HeaderSection from "./global/HeaderSection";
 import HeroSection from "./global/HeroSection";
 import CircleCards from "./global/CircleCards";
+import BenefitsAndSymptoms from "./global/BenefitsAndSymptoms";
 import "./styles/ImplantFullMouth.css";
 
 export default function ImplantFullMouth() {
@@ -18,32 +19,19 @@ export default function ImplantFullMouth() {
 					</p>
 				</div>
 			</section>
-			<section className="benefits">
-				<h2>장점</h2>
-				<div className="grid">
-					<img
-						src="/assets/images/full-mouth-implant/fullmouthimplant_benefits_superstable.png"
-						alt="안정적"
-					/>
-					<img
-						src="/assets/images/full-mouth-implant/fullmouthimplant_benefits_expertlycrafted.png"
-						alt="정밀 제작"
-					/>
-					<img
-						src="/assets/images/full-mouth-implant/fullmouthimplant_benefits_freedomtospeak.png"
-						alt="자유로운 발음"
-					/>
-					<img
-						src="/assets/images/full-mouth-implant/fullmouthimplant_benefits_lowmaintenance.png"
-						alt="유지관리 용이"
-					/>
-				</div>
-			</section>
 			<section className="section-recommend implant-fullmouth--recommend">
 				<h2 className="section-title implant-fullmouth--recommend-title">
 					Recommend <span>이런경우 추천해요</span>
 				</h2>
 				<CircleCards />
+			</section>
+			<section className="implant-fullmouth--benefits">
+				<h2 className="section-title implant-fullmouth--benefits-title">
+					Benefits <span>전체 임플란트 장점</span>
+				</h2>
+				<div className="benefits-cards--container">
+					<BenefitsAndSymptoms />
+				</div>
 			</section>
 		</div>
 	);

@@ -69,9 +69,9 @@ export const heroSection = [
 	{
 		id: 10,
 		title: "Dental bone graft",
-		image: "/assets/images/dental-bone-graft/dental-bone-graft_heroimg.jpg",
+		image: "/assets/images/dental-bone-graft/dentalbonegraft_heroimg.jpg",
 		imageMobile:
-			"/assets/images/dental-bone-graft/dental-bone-graft_heroimg-mobile.png",
+			"/assets/images/dental-bone-graft/dentalbonegraft_heroimg-mobile.png",
 		paths: ["/implants/bone-graft"],
 	},
 	{
@@ -86,9 +86,9 @@ export const heroSection = [
 		id: 12,
 		title: "Implant-supported dentures",
 		image:
-			"/assets/images/implant-supported-dentures/implant_supported_dentures_heroimg.jpg",
+			"/assets/images/implant-supported-dentures/Implant_supported_dentures_heroimg.jpg",
 		imageMobile:
-			"/assets/images/implant-supported-dentures/implant_supported_dentures_heroimg-mobile.png",
+			"/assets/images/implant-supported-dentures/Implant_supported_dentures_heroimg-mobile.png",
 		paths: ["/implants/dentures"],
 	},
 	{

@@ -79,7 +79,7 @@ export const headersDB = [
 	{
 		id: 12,
 		title: "implant-supported dentures",
-		titleEN: "implant-supported dentures",
+		titleEN: "Denture Implant",
 		titleKR: "임플란트 틀니",
 		paths: ["/implants/dentures"],
 	},

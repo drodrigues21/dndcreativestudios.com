@@ -1,20 +1,11 @@
 import HeaderSection from "./global/HeaderSection";
 import HeroSection from "./global/HeroSection";
-import { heroSection } from "../data/HeroSection";
-import { usePathMappedRecord } from "../hooks/usePathMappedRecord";
-import { benefitsDB } from "../data/benefitsAndSymptomsDB";
+import BenefitsAndSymptoms from "./global/BenefitsAndSymptoms";
 import specialistPic from "/assets/images/invisalign/invisalign_docpic.jpg";
 import specialistPicMobile from "/assets/images/invisalign/invisalign_docpic-mobile.png";
 import "./styles/OrthodonticsClipPyc.css";
 
 export default function OrthodonticsClipPyc() {
-	const currentHeroSection = usePathMappedRecord(heroSection, {
-		getPaths: (item) => item.routes || item.paths || [],
-		fallback: heroSection[0],
-	});
-
-	const benefits = benefitsDB.filter((item) => item.section === "clippyc");
-
 	return (
 		<div className="ortho-clippyc">
 			<HeaderSection />
@@ -46,18 +37,8 @@ export default function OrthodonticsClipPyc() {
 				<h2 className="clp-section-benefits--title">
 					Benefits <span>클리피씨 장점</span>
 				</h2>
-				<div className="clp-section-benefits--cards-container">
-					{benefits.map((item) => (
-						<div className="clp-section-benefits--card" key={item.id}>
-							<div className="clp-section-benefits--card-img">
-								<img src={item.icon} alt={item.title} />
-							</div>
-							<div className="clp-section-benefits--card-content">
-								<h3>{item.title}</h3>
-								<p>{item.description}</p>
-							</div>
-						</div>
-					))}
+				<div className="benefits-cards--clippyc">
+					<BenefitsAndSymptoms />
 				</div>
 			</section>
 

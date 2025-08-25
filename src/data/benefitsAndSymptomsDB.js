@@ -5,6 +5,7 @@ export const benefitsDB = [
 		title: "Invisible",
 		description: "인비절라인의 투명한 장치 특성상 눈에 잘 띄지 않음",
 		icon: "/assets/images/benefits/invisalign_benefits_fastresult.png",
+		paths: ["/orthodontics/invisalign"],
 	},
 	{
 		id: 2,
@@ -12,6 +13,7 @@ export const benefitsDB = [
 		title: "Eat Freely",
 		description: "일상생생활에 제약이 적고 자유롭게 음식섭취 가능",
 		icon: "/assets/images/benefits/invisalign_benefits_eatfreely.png",
+		paths: ["/orthodontics/invisalign"],
 	},
 	{
 		id: 3,
@@ -19,6 +21,7 @@ export const benefitsDB = [
 		title: "Less pain",
 		description: "점진진적이고 부드러운 치아이동으로 통증이 적음",
 		icon: "/assets/images/benefits/invisalign_benefits_lesspain.png",
+		paths: ["/orthodontics/invisalign"],
 	},
 	{
 		id: 4,
@@ -27,6 +30,7 @@ export const benefitsDB = [
 		description:
 			"교체 시기에 맞춰 환자 스스로 장치 교체가 가능해 내원 횟수 감소",
 		icon: "/assets/images/benefits/invisalign_benefits_lessvisit.png",
+		paths: ["/orthodontics/invisalign"],
 	},
 	{
 		id: 5,
@@ -34,6 +38,7 @@ export const benefitsDB = [
 		title: "Fast result",
 		description: "교정기간 최대 6개월 단축",
 		icon: "/assets/images/benefits/clippyc_benefits_fastresult.png",
+		paths: ["/orthodontics/clip-pyc"],
 	},
 	{
 		id: 6,
@@ -41,6 +46,7 @@ export const benefitsDB = [
 		title: "Aesthetic",
 		description: "치아색과 유사한 세라믹 브라켓으로 높은 심미성",
 		icon: "/assets/images/benefits/clippyc_benefits_aesthetic.png",
+		paths: ["/orthodontics/clip-pyc"],
 	},
 	{
 		id: 7,
@@ -48,6 +54,7 @@ export const benefitsDB = [
 		title: "Less pain",
 		description: "약한힘을 꾸준하게 가해 교정 중 통증 최소화",
 		icon: "/assets/images/benefits/clippyc_benefits_lesspain.png",
+		paths: ["/orthodontics/clip-pyc"],
 	},
 	{
 		id: 8,
@@ -55,6 +62,7 @@ export const benefitsDB = [
 		title: "Less visits",
 		description: "6-8주에 한 번 내원",
 		icon: "/assets/images/benefits/clippyc_benefits_lessvisit.png",
+		paths: ["/orthodontics/clip-pyc"],
 	},
 	{
 		id: 9,
@@ -62,6 +70,7 @@ export const benefitsDB = [
 		title: "Super stable",
 		description: "탈착 필요 없는 고정형 구조로 일상 속 안정감 제공",
 		icon: "/assets/images/benefits/fullmouth_benefits_superstable.png",
+		paths: ["/implants/full-mouth"],
 	},
 	{
 		id: 10,
@@ -69,6 +78,7 @@ export const benefitsDB = [
 		title: "Expertly crafted",
 		description: "치아 하나하나 정밀하게 설계해 자연치처럼 구현",
 		icon: "/assets/images/benefits/fullmouth_benefits_expertlycrafted.png",
+		paths: ["/implants/full-mouth"],
 	},
 	{
 		id: 11,
@@ -76,6 +86,7 @@ export const benefitsDB = [
 		title: "Freedom to speak",
 		description: "입천장 덮개 없이 더 편안하고 자연스러운 발음",
 		icon: "/assets/images/benefits/fullmouth_benefits_freedomtospeak.png",
+		paths: ["/implants/full-mouth"],
 	},
 	{
 		id: 12,
@@ -83,13 +94,15 @@ export const benefitsDB = [
 		title: "Low maintenance",
 		description: "탈착 필요 없는 고정형 구조로 일상 속 안정감 제공",
 		icon: "/assets/images/benefits/fullmouth_benefits_lowmaintenance.png",
+		paths: ["/implants/full-mouth"],
 	},
 	{
 		id: 13,
 		section: "dentures",
 		title: "Stable & Strong",
 		description: "높은 안정성과 저작력으로 만족도 UP",
-		icon: "/assets/images/benefits/dentures_benefits_stablestrong.svg",
+		icon: "/assets/images/benefits/dentures_benefits_stableandstrong.svg",
+		paths: ["/implants/dentures"],
 	},
 	{
 		id: 14,
@@ -97,6 +110,7 @@ export const benefitsDB = [
 		title: "Less pain",
 		description: "통증, 이물감 등 불편함이 DOWN",
 		icon: "/assets/images/benefits/dentures_benefits_lesspain.svg",
+		paths: ["/implants/dentures"],
 	},
 	{
 		id: 15,
@@ -104,6 +118,7 @@ export const benefitsDB = [
 		title: "No bone loss",
 		description: "치아 상실로 인한 치조골 흡수 예방",
 		icon: "/assets/images/benefits/dentures_benefits_noboneloss.svg",
+		paths: ["/implants/dentures"],
 	},
 	{
 		id: 16,
@@ -111,6 +126,7 @@ export const benefitsDB = [
 		title: "Cost-effective",
 		description: "임플란트 식립 개수를  줄여 비용 DOWN",
 		icon: "/assets/images/benefits/dentures_benefits_costeffective.svg",
+		paths: ["/implants/dentures"],
 	},
 	{
 		id: 17,
@@ -118,6 +134,7 @@ export const benefitsDB = [
 		title: "Minimum",
 		description: "치아삭제량이 거의 없는 최적의 앞니치료 솔루션입니다.",
 		icon: "/assets/images/benefits/veneers_benefits_minimum.svg",
+		paths: ["/orthodontics/veneers"],
 	},
 	{
 		id: 18,
@@ -125,6 +142,7 @@ export const benefitsDB = [
 		title: "0.02mm",
 		description: "얇고 투명한 세라믹이 치아와 완벽히 밀착하여 결합합니다.",
 		icon: "/assets/images/benefits/veneers_benefits_002mm.svg",
+		paths: ["/orthodontics/veneers"],
 	},
 	{
 		id: 19,
@@ -132,6 +150,7 @@ export const benefitsDB = [
 		title: "1-Day Result",
 		description: "오전에 내원하여 오후에 마무리하는 1-Day 앞니치료 솔루션",
 		icon: "/assets/images/benefits/veneers_benefits_1dayresult.svg",
+		paths: ["/orthodontics/veneers"],
 	},
 	{
 		id: 20,
@@ -140,6 +159,7 @@ export const benefitsDB = [
 		description:
 			"화이티니 디자인랩에서 20년 경력의  세라미스트가 직접 제작합니다.",
 		icon: "/assets/images/benefits/veneers_benefits_inhouselab.svg",
+		paths: ["/orthodontics/veneers"],
 	},
 	{
 		id: 21,
@@ -147,6 +167,7 @@ export const benefitsDB = [
 		title: "1-Day Treatment",
 		description: "하루 방문 1시간 시술로 짧은 시간에 치료 가능합니다",
 		icon: "/assets/images/benefits/whitening_benefits_1daytreatment.svg",
+		paths: ["/orthodontics/whitening"],
 	},
 	{
 		id: 22,
@@ -154,6 +175,7 @@ export const benefitsDB = [
 		title: "Satisfying Result",
 		description: "레이저 광선을 이용해 시술하므로 효과를 증진시켜줍니다",
 		icon: "/assets/images/benefits/whitening_benefits_satisfyingresult.svg",
+		paths: ["/orthodontics/whitening"],
 	},
 	{
 		id: 23,
@@ -161,6 +183,7 @@ export const benefitsDB = [
 		title: "Less Sensitivity",
 		description: "시술 후 치아의 시린 증상을 최소화합니다",
 		icon: "/assets/images/benefits/whitening_benefits_lesssensitivity.svg",
+		paths: ["/orthodontics/whitening"],
 	},
 	{
 		id: 24,
@@ -169,6 +192,7 @@ export const benefitsDB = [
 		description:
 			"전세계 150만 명 이상이 시술 받아 효과와 안전성을 입증 받은 제품입니다",
 		icon: "/assets/images/benefits/whitening_benefits_approvedmaterial.svg",
+		paths: ["/orthodontics/whitening"],
 	},
 	{
 		id: 25,
@@ -176,6 +200,7 @@ export const benefitsDB = [
 		title: "Bleeding & swollen",
 		description: "교정기간 최대 6개월 단축",
 		icon: "/assets/images/benefits/gumdisease_benefits_bleedingandswollen.svg",
+		paths: ["/orthodontics/gumdisease"],
 	},
 	{
 		id: 26,
@@ -183,6 +208,7 @@ export const benefitsDB = [
 		title: "Loose Teeth",
 		description: "치아 흔들림",
 		icon: "/assets/images/benefits/gumdisease_benefits_looseteeth.svg",
+		paths: ["/orthodontics/gumdisease"],
 	},
 	{
 		id: 27,
@@ -190,6 +216,7 @@ export const benefitsDB = [
 		title: "Gum Abscess",
 		description: "치아와 잇몸 사이 고름",
 		icon: "/assets/images/benefits/gumdisease_benefits_gumabscess.svg",
+		paths: ["/orthodontics/gumdisease"],
 	},
 	{
 		id: 28,
@@ -197,5 +224,6 @@ export const benefitsDB = [
 		title: "Painful Teeth",
 		description: "치아 통증 ",
 		icon: "/assets/images/benifits/gumdisease_benefits_painfulteeth.svg",
+		paths: ["/orthodontics/gumdisease"],
 	},
 ];

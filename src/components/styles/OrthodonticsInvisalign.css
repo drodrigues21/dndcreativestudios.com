@@ -1,59 +1,6 @@
-/* Recommend section */
-.invis-section-benefits--title {
-	font-family: var(--font-en-1);
-	font-size: 2.6rem;
-	font-weight: 600;
-	line-height: 3.2rem;
-	margin: 7rem 0 4.5rem;
+.invis-section-benefits {
 	padding: 0 2rem;
-}
-
-.invis-section-benefits--title span {
-	display: block;
-	font-family: var(--font-kr);
-	font-size: 1.6rem;
-	font-weight: 500;
-	line-height: 1.6rem;
-	color: #979797;
-}
-
-.invis-section-benefits--cards-container {
 	margin-bottom: 10rem;
-	padding: 0 2rem;
-}
-
-.invis-section-benefits--card {
-	display: flex;
-	align-items: center;
-	gap: 4.5rem;
-	background-color: #f2f2f2;
-	margin-bottom: 0.5rem;
-	padding: 2rem;
-}
-
-.invis-section-benefits--card-img {
-	flex: 1;
-}
-
-.invis-section-benefits--card-content {
-	flex: 2;
-}
-
-.invis-section-benefits--card-content h3 {
-	font-family: var(--font-en-1);
-	font-size: 1.8rem;
-	font-weight: 500;
-	line-height: 1.8rem;
-	text-transform: capitalize;
-	color: #4a4a4a;
-	margin: 0 0 1rem;
-}
-
-.invis-section-benefits--card-content p {
-	font-size: 1.4rem;
-	line-height: 2.2rem;
-	color: #4a4a4a;
-	margin: 0;
 }
 
 /* DESKTOP DOCTOR IMAGE */
