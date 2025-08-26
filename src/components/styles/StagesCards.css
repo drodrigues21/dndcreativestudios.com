@@ -15,7 +15,6 @@
 .stages-card {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	gap: 1.5rem;
 }
@@ -26,26 +25,34 @@
 	background-color: #01c2ca;
 }
 
-.stages-card--title {
+.stages-card--stage {
 	font-family: var(--font-en-1);
 	font-size: 1.6rem;
 	font-weight: 500;
 	line-height: 1.6rem;
-	text-transform: uppercase;
 	color: #fff;
 	margin: 0;
 }
 
-.stages-card--description-container {
-	margin-bottom: 4rem;
+.stages-card--title {
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+	text-align: center;
+	color: #252525;
+	margin: 0 0 1.5rem;
 }
 
-.stages-card--description-1,
-.stages-card--description-2 {
+.stages-card--description-container {
+	margin-bottom: 2rem;
+}
+
+.stages-card--description-container p {
+	width: 13rem;
 	font-size: 1.4rem;
-	line-height: 1.4rem;
+	line-height: 2rem;
 	text-align: center;
-	color: #404040;
+	color: #5d5d5d;
 	margin: 0;
 }
 

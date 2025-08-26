@@ -20,7 +20,10 @@ export default function BenefitsAndSymptoms() {
 					</div>
 					<div className="benefits-card--content">
 						<h3 className="benefits-card--title">{item.title}</h3>
-						<p className="benefits-card--description">{item.description}</p>
+						<p className="benefits-card--description">{item.description1}</p>
+						{item.description2 && (
+							<p className="benefits-card--description">{item.description2}</p>
+						)}
 					</div>
 				</div>
 			))}

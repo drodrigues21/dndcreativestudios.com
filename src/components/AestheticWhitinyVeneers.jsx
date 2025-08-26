@@ -1,5 +1,8 @@
 import HeaderSection from "./global/HeaderSection";
 import HeroSection from "./global/HeroSection";
+import CircleCards from "./global/CircleCards";
+import BeforeAndAfterCard from "./global/BeforeAndAfterCard";
+import BenefitsAndSymptoms from "./global/BenefitsAndSymptoms";
 import "./styles/AestheticWhitinyVeneers.css";
 
 export default function AestheticWhitinyVeneers() {
@@ -9,54 +12,41 @@ export default function AestheticWhitinyVeneers() {
 			<section className="hero-section">
 				<HeroSection />
 				<div className="hero-section--content-container">
-					<h2 className="hero-section--title-kr">임플란트란?</h2>
+					<h2 className="hero-section--title-kr">화이티니 라미네이트란?</h2>
 					<p className="hero-section--content-text">
-						상실한 자연치아를 대체하기 위해 잇몸뼈에 직접
-						<span>인공 치근을 식립하여 치아를 복원하는데 도움을 주는</span>
-						<span>대표적인 치료 방법입니다.</span>
+						화이티니 라미네이트는 화이트드림의 독자적인
+						<span>앞니치료 솔루션으로, 아름다움과 건강함이라는 </span>
+						<span>두가지 목적을 충족시킬 수 있도록 고안되었습니다.</span>
 					</p>
 				</div>
 			</section>
-			<section className="benefits">
-				<h2>장점</h2>
-				<div className="grid">
-					<img
-						src="/assets/images/veneers/veneers_benefits_002mm.svg"
-						alt="얇은 두께"
-					/>
-					<img
-						src="/assets/images/veneers/veneers_benefits_1dayresult.svg"
-						alt="빠른 결과"
-					/>
-					<img
-						src="/assets/images/veneers/veneers_benefits_inhouselab.svg"
-						alt="인하우스 랩"
-					/>
-					<img
-						src="/assets/images/veneers/veneers_benefits_minimum.svg"
-						alt="최소 삭제"
-					/>
+			<section className="section-recommend implant-fullmouth--recommend">
+				<h2 className="section-title implant-fullmouth--recommend-title">
+					Recommend <span>이런분께 추천해요</span>
+				</h2>
+				<CircleCards />
+			</section>
+			<section className="veneers-beforeafter">
+				<h2 className="section-title">
+					Before & After <span>화이티니 라미 전후사진</span>
+				</h2>
+				<BeforeAndAfterCard selectedCategory="치아교정" />
+				<div className="before-and-after--notice">
+					<p>
+						*본이미지는 치료의 이해를 위해 삽입되었으며, 모든치료는 개인차가
+						있습니다.
+					</p>
+					<p>
+						*동일한 조건에서 촬영되었으며, 보정이 이루어지지 않은 이미지입니다
+					</p>
 				</div>
 			</section>
-			<section className="recommend">
-				<h2>이런 분께 추천드려요</h2>
-				<div className="grid">
-					<img
-						src="/assets/images/veneers/veneers_recommend01.png"
-						alt="추천 1"
-					/>
-					<img
-						src="/assets/images/veneers/veneers_recommend02.png"
-						alt="추천 2"
-					/>
-					<img
-						src="/assets/images/veneers/veneers_recommend03.png"
-						alt="추천 3"
-					/>
-					<img
-						src="/assets/images/veneers/veneers_recommend04.png"
-						alt="추천 4"
-					/>
+			<section className="implant-fullmouth--benefits">
+				<h2 className="section-title implant-fullmouth--benefits-title">
+					Benefits <span>화이티니 라미네이트 장점</span>
+				</h2>
+				<div className="benefits-cards--container">
+					<BenefitsAndSymptoms />
 				</div>
 			</section>
 		</div>

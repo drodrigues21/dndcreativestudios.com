@@ -24,14 +24,19 @@ export default function SquareCards() {
 							<img src={item.icon} alt="" />
 						</span>
 					</h3>
+					{item.subTitle && (
+						<h4 className="square-card--sub-title">{item.subTitle}</h4>
+					)}
 					<div className="square-card--pill-container">
 						<span className="square-card--black-pill">{item.blackPill}</span>
 						<p className="square-card--p">{item.advantage}</p>
 					</div>
-					<div className="square-card--pill-container">
-						<span className="square-card--white-pill">{item.whitePill}</span>
-						<p className="square-card--p">{item.disadvantage}</p>
-					</div>
+					{item.disadvantage && (
+						<div className="square-card--pill-container disadvantage-pill">
+							<span className="square-card--white-pill">{item.whitePill}</span>
+							<p className="square-card--p">{item.disadvantage}</p>
+						</div>
+					)}
 				</div>
 			))}
 		</div>

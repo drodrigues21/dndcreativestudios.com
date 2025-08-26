@@ -1,0 +1,65 @@
+.tmj-treatment--target-audience {
+	margin-top: 12rem;
+	padding: 0 2rem;
+}
+
+.tmj-treatment--symptoms {
+	padding: 0 2rem;
+}
+
+.tmj-treatment-img--desktop {
+	display: none;
+}
+
+.tmj-treatment-content--container {
+	background-color: #f9f9f9;
+}
+
+.tmj-treatment-content {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	margin-top: 3rem;
+	padding: 0 2rem 3rem;
+}
+
+.tmj-treatment-content--text {
+	display: flex;
+	align-items: flex-start;
+	gap: 2.5rem;
+}
+
+.tmj-treatment-content--checkmark {
+	position: relative;
+}
+
+.checkmark-icon {
+	position: absolute;
+	top: calc(50% - 0.7rem);
+	left: calc(50% - 1rem);
+}
+
+.tmj-treatment-content--text P {
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	text-decoration: underline;
+	text-underline-offset: 0.4rem;
+	text-decoration-color: #d7d7d7;
+	color: #252525;
+	margin: 0;
+}
+
+.tmj-treatment-content--text span {
+	display: block;
+	margin-top: 0.7rem;
+}
+
+@media (min-width: 1000px) {
+	.tmj-treatment-img--desktop {
+		display: block;
+	}
+
+	.tmj-treatment-img--mobile {
+		display: none;
+	}
+}

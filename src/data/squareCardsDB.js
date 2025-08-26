@@ -102,7 +102,7 @@ export const squareCardsDB = [
 		advantage:
 			"잇몸미관 개선을 원하는 경우, 염증으로 잇몸이 비대해진 경우, 염증으로 치주 포켓이 깊은 경우.",
 		blackPill: "대상",
-		paths: ["/gum-aesthetics"],
+		paths: ["/aesthetics/gum-aesthetics"],
 	},
 	{
 		id: 9,
@@ -115,7 +115,7 @@ export const squareCardsDB = [
 		advantage:
 			"잇몸 미관 개선을 원하는 경우, 뿌리가 노출된 경우, 질환으로 잇몸 손실이 심한 경우.",
 		blackPill: "대상",
-		paths: ["/gum-aesthetics"],
+		paths: ["/aesthetics/gum-aesthetics"],
 	},
 	{
 		id: 10,
@@ -127,7 +127,7 @@ export const squareCardsDB = [
 		icon: "/assets/icons/squareCards/stars.png",
 		advantage: "잇몸 착색이 신경 쓰이는 경우.",
 		blackPill: "대상",
-		paths: ["/gum-aesthetics"],
+		paths: ["/aesthetics/gum-aesthetics"],
 	},
 	{
 		id: 11,
@@ -135,9 +135,11 @@ export const squareCardsDB = [
 		title: "층치로 인해 심해진 염증",
 		image:
 			"/assets/images/root-canal-treatment/rootcanaltreatment_indication01.jpg",
+		imageMobile:
+			"/assets/images/root-canal-treatment/rootcanaltreatment_indication01-mobile.png",
 		advantage: "충치가 심해져 치아 뿌리나 치아 신경까지 염증이 발생 한 경우",
 		blackPill: "Case 01",
-		paths: ["/root-canal-treatment"],
+		paths: ["/treatments/root-canal"],
 	},
 	{
 		id: 12,
@@ -145,9 +147,11 @@ export const squareCardsDB = [
 		title: "넓고 깊은 충치",
 		image:
 			"/assets/images/root-canal-treatment/rootcanaltreatment_indication02.jpg",
+		imageMobile:
+			"/assets/images/root-canal-treatment/rootcanaltreatment_indication02-mobile.png",
 		advantage: "충치가 심해져 충치 제거범위가 깊고 넓은경우",
 		blackPill: "Case 02",
-		paths: ["/root-canal-treatment"],
+		paths: ["/treatments/root-canal"],
 	},
 	{
 		id: 13,
@@ -155,120 +159,150 @@ export const squareCardsDB = [
 		title: "재발하는 통증",
 		image:
 			"/assets/images/root-canal-treatment/rootcanaltreatment_indication03.jpg",
+		imageMobile:
+			"/assets/images/root-canal-treatment/rootcanaltreatment_indication03-mobile.png",
 		advantage: "이전에 신경치료에 실패하여  통증이 지속되거나 재발하는 경우",
 		blackPill: "Case 03",
-		paths: ["/root-canal-treatment"],
+		paths: ["/treatments/root-canal"],
 	},
 	{
 		id: 14,
 		section: "wisdomtooth",
-		image: "/assets/images/wisdomtoothremoval/wisdomtoothremoval_problem01.jpg",
+		image:
+			"/assets/images/wisdomtooth-removal/wisdomtoothremoval_problem01.jpg",
+		imageMobile:
+			"/assets/images/wisdomtooth-removal/wisdomtoothremoval_problem01-mobile.png",
 		advantage:
 			"관리가 어려워 쉽게 부식되는 사랑니는 사랑니 충치 뿐만 아니라 건강한 주변 치아까지 충치가 생길 수 있습니다.",
 		blackPill: "problem 01",
-		paths: ["/wisdom-tooth-removal"],
+		paths: ["/treatments/wisdom-tooth-removal"],
 	},
 	{
 		id: 15,
 		section: "wisdomtooth",
-		image: "/assets/images/wisdomtoothremoval/wisdomtoothremoval_problem02.jpg",
+		image:
+			"/assets/images/wisdomtooth-removal/wisdomtoothremoval_problem02.jpg",
+		imageMobile:
+			"/assets/images/wisdomtooth-removal/wisdomtoothremoval_problem02-mobile.png",
 		advantage:
 			"음식물이 잘 끼어서 잇몸이 붓고 충치 및 치주염 발생 확률이 높아집니다.",
 		blackPill: "problem 02",
-		paths: ["/wisdom-tooth-removal"],
+		paths: ["/treatments/wisdom-tooth-removal"],
 	},
 	{
 		id: 16,
 		section: "wisdomtooth",
-		image: "/assets/images/wisdomtoothremoval/wisdomtoothremoval_problem03.jpg",
+		image:
+			"/assets/images/wisdomtooth-removal/wisdomtoothremoval_problem03.jpg",
+		imageMobile:
+			"/assets/images/wisdomtooth-removal/wisdomtoothremoval_problem03-mobile.png",
 		advantage:
 			"임신 중인 여성은 사랑니 염증이 생기면 치료 받기가 곤란해 염증 증상이 더욱 심각해 질 수 있습니다.",
 		blackPill: "problem 03",
-		paths: ["/wisdom-tooth-removal"],
+		paths: ["/treatments/wisdom-tooth-removal"],
 	},
 	{
 		id: 17,
 		section: "wisdomtooth",
-		image: "/assets/images/wisdomtoothremoval/wisdomtoothremoval_problem04.jpg",
+		image:
+			"/assets/images/wisdomtooth-removal/wisdomtoothremoval_problem04.jpg",
+		imageMobile:
+			"/assets/images/wisdomtooth-removal/wisdomtoothremoval_problem04-mobile.png",
 		advantage:
 			"치아가 나오는 공간이 부족한 경우 치열이 불규칙 해지며 통증을 유발할 수 있습니다.",
 		blackPill: "problem 04",
-		paths: ["/wisdom-tooth-removal"],
+		paths: ["/treatments/wisdom-tooth-removal"],
 	},
 	{
 		id: 18,
 		section: "tmj",
 		image: "/assets/images/tmj-treatment/tmj_treatment_method01.jpg",
+		imageMobile:
+			"/assets/images/tmj-treatment/tmj_treatment_method01-mobile.png",
 		advantage:
 			"턱관절 주변에 보톡스를 주사해 근육의 긴장을 풀어주어 턱관절 통증을 완화시켜줍니다.",
 		blackPill: "보톡스치료",
-		paths: ["/tmj-treatment"],
+		paths: ["/treatments/tmj-treatment"],
 	},
 	{
 		id: 19,
 		section: "tmj",
 		image: "/assets/images/tmj-treatment/tmj_treatment_method02.jpg",
+		imageMobile:
+			"/assets/images/tmj-treatment/tmj_treatment_method02-mobile.png",
 		advantage:
 			"진통제,신경 안정제, 근이완제 등의 약물을사용해 턱관절 통증을 완화시켜줍니다. ",
 		blackPill: "약물치료",
-		paths: ["/tmj-treatment"],
+		paths: ["/treatments/tmj-treatment"],
 	},
 	{
 		id: 20,
 		section: "tmj",
 		image: "/assets/images/tmj-treatment/tmj_treatment_method03.jpg",
+		imageMobile:
+			"/assets/images/tmj-treatment/tmj_treatment_method03-mobile.png",
 		advantage:
 			"초음파, 경피성 전기신경 자극 등 전기자극을통해 근육을 이완시켜 통증을 완화시켜줍니다.",
 		blackPill: "물리치료",
-		paths: ["/tmj-treatment"],
+		paths: ["/treatments/tmj-treatment"],
 	},
 	{
 		id: 21,
 		section: "tmj",
 		image: "/assets/images/tmj-treatment/tmj_treatment_method04.jpg",
+		imageMobile:
+			"/assets/images/tmj-treatment/tmj_treatment_method04-mobile.png",
 		advantage:
 			"스플린트를 장착해 이가 맞물릴 때의 위치를 바로 잡아주고,턱관절 과의 교합도  안정시켜줍니다.",
 		blackPill: "스플린트(교합안전장치)",
-		paths: ["/tmj-treatment"],
+		paths: ["/treatments/tmj-treatment"],
 	},
 	{
 		id: 22,
 		section: "gumdisease",
 		image:
 			"/assets/images/gum-disease-treatment/gumdiseasetreatment_cause01.jpg",
+		imageMobile:
+			"/assets/images/gum-disease-treatment/gumdiseasetreatment_cause01-mobile.png",
 		advantage:
 			"양치 부족 또는 잇몸을 자극하는 강한 칫솔질은 잇몸 건강을 악화시킵니다.",
 		blackPill: "잘못된 칫솔질",
-		paths: ["/gum-disease-treatment"],
+		paths: ["/treatments/gum-disease-treatment"],
 	},
 	{
 		id: 23,
 		section: "gumdisease",
 		image:
 			"/assets/images/gum-disease-treatment/gumdiseasetreatment_cause02.jpg",
+		imageMobile:
+			"/assets/images/gum-disease-treatment/gumdiseasetreatment_cause02-mobile.png",
 		advantage:
 			"면역력 저하와 염증 반응 증가로 치주질환이 더 쉽게 발생하거나 악화됩니다.",
 		blackPill: "전신질환 (당뇨병 등)",
-		paths: ["/gum-disease-treatment"],
+		paths: ["/treatments/gum-disease-treatment"],
 	},
 	{
 		id: 24,
 		section: "gumdisease",
 		image:
 			"/assets/images/gum-disease-treatment/gumdiseasetreatment_cause03.jpg",
+		imageMobile:
+			"/assets/images/gum-disease-treatment/gumdiseasetreatment_cause03-mobile.png",
 		advantage:
 			"입속 세균이 쌓여 생긴 끈적한 막과 굳은 침전물이 잇몸 염증을 유발합니다.",
 		blackPill: "치태(플라그)와 치석",
-		paths: ["/gum-disease-treatment"],
+		paths: ["/treatments/gum-disease-treatment"],
 	},
 	{
 		id: 25,
 		section: "gumdisease",
 		image:
 			"/assets/images/gum-disease-treatment/gumdiseasetreatment_cause04.jpg",
+		imageMobile:
+			"/assets/images/gum-disease-treatment/gumdiseasetreatment_cause04-mobile.png",
 		advantage:
 			"혈류를 감소시키고 면역 반응을 저하시켜 치주질환의 위험을 높입니다.",
 		blackPill: "흡연",
-		paths: ["/gum-disease-treatment"],
+		paths: ["/treatments/gum-disease-treatment"],
 	},
 ];

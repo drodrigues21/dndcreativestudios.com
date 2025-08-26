@@ -107,9 +107,9 @@ export const heroSection = [
 	},
 	{
 		id: 15,
-		title: "Gum Aesthetics",
-		image: "/assets/images/gum-aesthetic/gumaesthetic_heroimg.jpg ",
-		imageMobile: "/assets/images/gum-aesthetic/gumaesthetic_heroimg-mobile.png",
+		title: "Gum Plastic Surgery",
+		image: "/assets/images/gum-aesthetic/gumaesthtic_heroimg.jpg ",
+		imageMobile: "/assets/images/gum-aesthetic/gumaesthtic_heroimg-mobile.png",
 		paths: ["/aesthetics/gum-aesthetics"],
 	},
 	{
@@ -117,6 +117,8 @@ export const heroSection = [
 		title: "Tooth decay treatment",
 		image:
 			"/assets/images/tooth-decay-treatment/toothdecaytreatment_heroimg.jpg",
+		imageMobile:
+			"/assets/images/tooth-decay-treatment/toothdecaytreatment_whentotreat.png",
 		paths: ["/treatments"],
 	},
 	{

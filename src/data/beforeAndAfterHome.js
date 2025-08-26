@@ -6,6 +6,7 @@ export const beforeAndAfterHomeDB = [
 		imgBefore: "/assets/images/mainpage/beforeafterpic_implant_before01.jpg",
 		beforeDate: "2024.05.25",
 		afterDate: "2024.05.25",
+		paths: ["/implants"],
 	},
 	{
 		id: 2,
@@ -14,6 +15,7 @@ export const beforeAndAfterHomeDB = [
 		imgBefore: "/assets/images/mainpage/beforeafterpic_implant_before02.jpg",
 		beforeDate: "2024.05.25",
 		afterDate: "2024.05.25",
+		paths: ["/implants"],
 	},
 	{
 		id: 3,
@@ -22,6 +24,7 @@ export const beforeAndAfterHomeDB = [
 		imgBefore: "/assets/images/mainpage/beforeafterpic_implant_before03.jpg",
 		beforeDate: "2024.05.25",
 		afterDate: "2024.05.25",
+		paths: ["/implants"],
 	},
 	{
 		id: 4,
@@ -31,6 +34,7 @@ export const beforeAndAfterHomeDB = [
 			"/assets/images/mainpage/beforeafterpic_orthodontics_before01.jpg",
 		beforeDate: "2024.05.25",
 		afterDate: "2024.05.25",
+		paths: ["/orthodontics"],
 	},
 	{
 		id: 5,
@@ -40,6 +44,7 @@ export const beforeAndAfterHomeDB = [
 			"/assets/images/mainpage/beforeafterpic_orthodontics_before02.jpg",
 		beforeDate: "2024.05.25",
 		afterDate: "2024.05.25",
+		paths: ["/orthodontics"],
 	},
 	{
 		id: 6,
@@ -49,6 +54,7 @@ export const beforeAndAfterHomeDB = [
 			"/assets/images/mainpage/beforeafterpic_orthodontics_before03.jpg",
 		beforeDate: "2024.05.25",
 		afterDate: "2024.05.25",
+		paths: ["/orthodontics"],
 	},
 	{
 		id: 7,
@@ -57,6 +63,7 @@ export const beforeAndAfterHomeDB = [
 		imgBefore: "/assets/images/mainpage/beforeafterpic_veneers_before01.jpg",
 		beforeDate: "2024.05.25",
 		afterDate: "2024.05.25",
+		paths: ["/aesthetics"],
 	},
 	{
 		id: 8,
@@ -65,6 +72,7 @@ export const beforeAndAfterHomeDB = [
 		imgBefore: "/assets/images/mainpage/beforeafterpic_veneers_before02.jpg",
 		beforeDate: "2024.05.25",
 		afterDate: "2024.05.25",
+		paths: ["/aesthetics"],
 	},
 	{
 		id: 9,
@@ -73,6 +81,7 @@ export const beforeAndAfterHomeDB = [
 		imgBefore: "/assets/images/mainpage/beforeafterpic_veneers_before03.jpg",
 		beforeDate: "2024.05.25",
 		afterDate: "2024.05.25",
+		paths: ["/aesthetics"],
 	},
 	{
 		id: 10,
@@ -81,6 +90,7 @@ export const beforeAndAfterHomeDB = [
 		imgBefore: "/assets/images/mainpage/beforeafterpic_veneers_before01.jpg",
 		beforeDate: "2024.05.25",
 		afterDate: "2024.05.25",
+		paths: ["/aesthetics/teeth-whitening"],
 	},
 	{
 		id: 11,
@@ -89,6 +99,7 @@ export const beforeAndAfterHomeDB = [
 		imgBefore: "/assets/images/mainpage/beforeafterpic_veneers_before02.jpg",
 		beforeDate: "2024.05.25",
 		afterDate: "2024.05.25",
+		paths: ["/aesthetics/teeth-whitening"],
 	},
 	{
 		id: 12,
@@ -97,5 +108,33 @@ export const beforeAndAfterHomeDB = [
 		imgBefore: "/assets/images/mainpage/beforeafterpic_veneers_before03.jpg",
 		beforeDate: "2024.05.25",
 		afterDate: "2024.05.25",
+		paths: ["/aesthetics/teeth-whitening"],
+	},
+	{
+		id: 13,
+		category: "치아미백",
+		imgAfter: "/assets/images/mainpage/beforeafterpic_veneers_after03.jpg",
+		imgBefore: "/assets/images/mainpage/beforeafterpic_veneers_before03.jpg",
+		beforeDate: "2024.05.25",
+		afterDate: "2024.05.25",
+		paths: ["/aesthetics/gum-aesthetics"],
+	},
+	{
+		id: 14,
+		category: "치아미백",
+		imgAfter: "/assets/images/mainpage/beforeafterpic_veneers_after03.jpg",
+		imgBefore: "/assets/images/mainpage/beforeafterpic_veneers_before03.jpg",
+		beforeDate: "2024.05.25",
+		afterDate: "2024.05.25",
+		paths: ["/aesthetics/gum-aesthetics"],
+	},
+	{
+		id: 15,
+		category: "치아미백",
+		imgAfter: "/assets/images/mainpage/beforeafterpic_veneers_after03.jpg",
+		imgBefore: "/assets/images/mainpage/beforeafterpic_veneers_before03.jpg",
+		beforeDate: "2024.05.25",
+		afterDate: "2024.05.25",
+		paths: ["/aesthetics/gum-aesthetics"],
 	},
 ];

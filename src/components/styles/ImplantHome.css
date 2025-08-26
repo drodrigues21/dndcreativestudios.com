@@ -1,3 +1,7 @@
+.implant-home--structure-content-desktop {
+	display: none;
+}
+
 .implant-home--beforeafter,
 .implant-home--structure {
 	padding: 0 2rem;
@@ -5,4 +9,124 @@
 
 .implant-home--structure {
 	margin: 10rem 0 13rem;
+}
+
+.implant-home--structure-content-mobile-content {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	margin-top: 5rem;
+}
+
+.implant-home--structure-content-mobile-content-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.implant-home--structure-content-mobile-content-item h5 {
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 2.2rem;
+	color: #fff;
+	background-color: #5d5d5d;
+	margin: 0;
+	padding: 1.5rem 2rem;
+	border-radius: 4rem;
+}
+
+.implant-home--structure-content-mobile-content-item p {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 2rem;
+	text-align: center;
+	color: #252525;
+}
+
+.implant-home--structure-content-mobile-content-item p span {
+	display: block;
+}
+
+/* DESKTOP */
+@media (min-width: 1000px) {
+	.implant-home--structure-content-desktop {
+		max-width: 65rem;
+		display: block;
+	}
+	.implant-home--structure-content-desktop-header {
+		display: flex;
+	}
+
+	.implant-home--structure-content-desktop-header-left h4,
+	.implant-home--structure-content-desktop-header-right h4 {
+		font-size: 2rem;
+		font-weight: 500;
+		line-height: 2.2rem;
+		text-align: center;
+		color: #fff;
+		margin: 0;
+		padding: 1.5rem 0;
+	}
+
+	.implant-home--structure-content-desktop-header-left {
+		width: 25rem;
+		background-color: #01c2ca;
+		border-right: 2px solid #dcdcdc;
+	}
+
+	.implant-home--structure-content-desktop-header-right {
+		flex: 2;
+		background-color: #5e5e5e;
+	}
+
+	.implant-home--structure-content-desktop-content {
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
+		background-color: #dcdcdc;
+	}
+
+	.implant-home--structure-content-desktop-content-item {
+		display: flex;
+		background-color: #f2f2f2;
+	}
+
+	.implant-home--structure-content-desktop-content-item h5 {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 25rem;
+		font-size: 2rem;
+		font-weight: 700;
+		line-height: 2.5rem;
+		color: #5e5e5e;
+		margin: 0;
+		padding: 4rem 0;
+	}
+
+	.implant-home--structure-content-desktop-content-item h5::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 2px;
+		height: 100%;
+		background-color: #dcdcdc;
+	}
+
+	.implant-home--structure-content-desktop-content-item p {
+		flex: 2;
+		font-size: 1.6rem;
+		font-weight: 400;
+		line-height: 2.8rem;
+		color: #252525;
+		margin: 0;
+		padding: 4rem 0 4rem 4rem;
+	}
+
+	.implant-home--structure-content-desktop-content-item p span {
+		display: block;
+	}
 }

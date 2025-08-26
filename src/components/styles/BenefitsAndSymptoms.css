@@ -2,16 +2,14 @@
 /* ------- Benefits & Symptoms ------- */
 /* ----------------------------------- */
 .benefits-cards--container {
-	margin-bottom: 10rem;
+	margin: 5rem 0 10rem;
 }
 
 .benefits-card {
 	display: flex;
 	align-items: center;
-	gap: 4.5rem;
-	background-color: #f2f2f2;
-	margin-bottom: 0.5rem;
-	padding: 2.5rem 6rem 2.5rem 4rem;
+	gap: 3rem;
+	margin-bottom: 4.5rem;
 }
 
 .benefits-card--img {
@@ -19,7 +17,7 @@
 }
 
 .benefits-card--content {
-	flex: 2;
+	flex: 3;
 }
 
 .benefits-card--title {
