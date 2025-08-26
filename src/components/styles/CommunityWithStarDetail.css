@@ -1,0 +1,39 @@
+.withstar-detail--image-wrapper {
+	margin-top: 3rem;
+}
+
+.withstar-detail--header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	border-bottom: 2px solid #b1b1b1;
+}
+
+.withstar-detail--title {
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #252525;
+}
+
+.withstar-detail--author-date-wrapper p {
+	color: #c4c4c4;
+}
+
+.withstar-detail--author {
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.4rem;
+}
+
+.withstar-detail--date {
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 1.2rem;
+}
+
+.withstar-detail--description {
+	font-size: 1.4rem;
+	line-height: 3rem;
+	padding: 2rem;
+}

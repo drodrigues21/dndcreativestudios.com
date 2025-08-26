@@ -1,0 +1,93 @@
+.community-withstar--card-image-desktop {
+	display: none;
+}
+
+.community-withstar--header {
+	padding: 0 2rem;
+}
+
+.community-withstar--grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 3.5rem 0;
+	margin-top: 5rem;
+}
+
+.community-withstar--card-image-mobile {
+	width: 100%;
+}
+
+.community-withstar--card-content {
+	padding: 0 1rem;
+}
+
+.community-withstar--card-content h2 {
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 1.2rem;
+	color: #252525;
+}
+
+.community-withstar--card-content p {
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 1.2rem;
+	color: #c4c4c4;
+}
+
+.community-withstar--add-wrapper {
+	display: flex;
+	justify-content: flex-end;
+	margin: 3rem 2rem;
+}
+
+.community-withstar--add-button {
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #fff;
+	background-color: #000;
+	padding: 1.25rem 3rem;
+}
+
+.community-withstar--add-button span {
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 2rem;
+	margin-right: 0.25rem;
+}
+
+.community-withstar--pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin: 3rem 0;
+}
+
+.community-withstar--pagination button {
+	font-family: var(--font-en-1);
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+	color: #bebebe;
+	background: none;
+	border: none;
+}
+
+.community-withstar--pagination .prev,
+.community-withstar--pagination .next {
+	font-size: 2.5rem;
+	font-weight: 400;
+	line-height: 2.5rem;
+	color: #323232;
+}
+
+.community-withstar--pagination button[disabled] {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.community-withstar--pagination .page-button.is-active {
+	color: #000;
+}

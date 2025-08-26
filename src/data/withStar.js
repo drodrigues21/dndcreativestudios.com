@@ -1,9 +1,11 @@
 export const withStar = [
 	{
 		id: 1,
+		author: "Admin",
 		title: "그룹 YOUNITE 방문!",
 		date: "2025.04.28",
 		image: "/assets/images/withstar/withstar_gallery09.jpg",
+		imageMobile: "/assets/images/withstar/withstar_gallery09-mobile.png",
 		imageDetail: "/assets/images/withstar/withstar_detail09.jpg",
 		description: [
 			"화이트드림치과에 프로듀스 X 101 출신 이은상님이 소속된 그룹 YOUNITE 멤버분들이 방문해주셨습니다!",
@@ -13,9 +15,11 @@ export const withStar = [
 	},
 	{
 		id: 2,
+		author: "Admin",
 		title: "미스터트롯 남승민님 방문!",
 		date: "2025.04.28",
 		image: "/assets/images/withstar/withstar_gallery08.jpg",
+		imageMobile: "/assets/images/withstar/withstar_gallery08-mobile.png",
 		imageDetail: "/assets/images/withstar/withstar_detail08.jpg",
 		description: [
 			"화이트드림치과에 프로듀스 X 101 출신 이은상님이 소속된 그룹 YOUNITE 멤버분들이 방문해주셨습니다!",
@@ -25,9 +29,11 @@ export const withStar = [
 	},
 	{
 		id: 3,
+		author: "Admin",
 		title: "미스터트롯 이찬원님 방문!",
 		date: "2025.04.28",
 		image: "/assets/images/withstar/withstar_gallery07.jpg",
+		imageMobile: "/assets/images/withstar/withstar_gallery07-mobile.png",
 		imageDetail: "/assets/images/withstar/withstar_detail07.jpg",
 		description: [
 			"화이트드림치과에 프로듀스 X 101 출신 이은상님이 소속된 그룹 YOUNITE 멤버분들이 방문해주셨습니다!",
@@ -37,9 +43,11 @@ export const withStar = [
 	},
 	{
 		id: 4,
+		author: "Admin",
 		title: "금메달리스트 최정민 선수...",
 		date: "2025.04.28",
 		image: "/assets/images/withstar/withstar_gallery05.jpg",
+		imageMobile: "/assets/images/withstar/withstar_gallery05-mobile.png",
 		imageDetail: "/assets/images/withstar/withstar_detail05.jpg",
 		description: [
 			"화이트드림치과에 프로듀스 X 101 출신 이은상님이 소속된 그룹 YOUNITE 멤버분들이 방문해주셨습니다!",
@@ -49,9 +57,11 @@ export const withStar = [
 	},
 	{
 		id: 5,
+		author: "Admin",
 		title: "미스터트롯 남승민님 방문!",
 		date: "2025.04.28",
 		image: "/assets/images/withstar/withstar_gallery04.jpg",
+		imageMobile: "/assets/images/withstar/withstar_gallery04-mobile.png",
 		imageDetail: "/assets/images/withstar/withstar_detail04.jpg",
 		description: [
 			"화이트드림치과에 프로듀스 X 101 출신 이은상님이 소속된 그룹 YOUNITE 멤버분들이 방문해주셨습니다!",
@@ -61,9 +71,11 @@ export const withStar = [
 	},
 	{
 		id: 6,
+		author: "Admin",
 		title: "미스터트롯 남승민님 방문!",
 		date: "2025.04.28",
 		image: "/assets/images/withstar/withstar_gallery06.jpg",
+		imageMobile: "/assets/images/withstar/withstar_gallery06-mobile.png",
 		imageDetail: "/assets/images/withstar/withstar_detail06.jpg",
 		description: [
 			"화이트드림치과에 프로듀스 X 101 출신 이은상님이 소속된 그룹 YOUNITE 멤버분들이 방문해주셨습니다!",
@@ -73,6 +85,7 @@ export const withStar = [
 	},
 	{
 		id: 7,
+		author: "Admin",
 		title: "가수 하민우님 방문!",
 		date: "2025.04.28",
 		image: "/assets/images/withstar/withstar_gallery03.jpg",
@@ -85,6 +98,7 @@ export const withStar = [
 	},
 	{
 		id: 8,
+		author: "Admin",
 		title: "가수 김시훈님 방문!",
 		date: "2025.04.28",
 		image: "/assets/images/withstar/withstar_gallery02.jpg",
@@ -97,6 +111,7 @@ export const withStar = [
 	},
 	{
 		id: 9,
+		author: "Admin",
 		title: "배우 손현주님 방문!",
 		date: "2025.04.28",
 		image: "/assets/images/withstar/withstar_gallery01.jpg",
