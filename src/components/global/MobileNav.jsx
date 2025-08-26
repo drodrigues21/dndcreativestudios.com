@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import ConsultationForm from "./ConsultationForm";
 import OurPolicies from "./OurPolicies";
 import MessegeComfirmation from "./MessegeComfirmation";
 import upArrow from "../../assets/icons/arrow-up.svg";
 import downArrow from "../../assets/icons/arrow-down.svg";
 import mobileNavBgTop from "../../assets/icons/wave01.svg";
+import "../styles/Modal.css";
 import "../styles/MobileNav.css";
 
 export default function MobileNav() {
@@ -42,6 +44,13 @@ export default function MobileNav() {
 		setIsMenuOpen(!isMenuOpen);
 	};
 
+	const handleToggleKeyDown = (e, toggleFn) => {
+		if (e.key === "Enter" || e.key === " ") {
+			e.preventDefault();
+			toggleFn();
+		}
+	};
+
 	const toggleSubMenu = (itemIndex) => {
 		setOpenSubMenus((prev) => ({
 			...prev,
@@ -75,16 +84,21 @@ export default function MobileNav() {
 		setIsConfirmationModalOpen(false);
 	};
 
+	const closeMenu = () => setIsMenuOpen(false);
+
 	return (
 		<>
 			{/* Mobile Navigation */}
-			<nav className="main-nav--mobile-container">
+			<nav
+				className="main-nav--mobile-container"
+				aria-label="Mobile primary navigation"
+			>
 				<div className="main-nav--mobile">
 					<div className="main-nav--mobile-icon main-nav--mobile-home">
-						<a href="/">
+						<Link to="/">
 							<img src="/assets/icons/home.svg" alt="home" />
 							<span className="hamburger-text">홈</span>
-						</a>
+						</Link>
 					</div>
 					<div className="main-nav--mobile-icon main-nav--mobile-location">
 						<a href="#location">
@@ -97,6 +111,11 @@ export default function MobileNav() {
 							isMenuOpen ? "active" : ""
 						}`}
 						onClick={toggleMenu}
+						role="button"
+						tabIndex={0}
+						aria-expanded={isMenuOpen}
+						aria-controls="mobile-menu"
+						onKeyDown={(e) => handleToggleKeyDown(e, toggleMenu)}
 					>
 						<div className="hamburger-line--container">
 							<span className="hamburger-line"></span>
@@ -106,10 +125,10 @@ export default function MobileNav() {
 						<span className="hamburger-text">메뉴</span>
 					</div>
 					<div className="main-nav--mobile-icon main-nav--mobile-contact">
-						<a href="/">
+						<Link to="/about-us">
 							<img src="/assets/icons/contact.svg" alt="contact" />
 							<span className="hamburger-text">톡상담</span>
-						</a>
+						</Link>
 					</div>
 					<div
 						className="main-nav--mobile-icon main-nav--mobile-customer"
@@ -123,6 +142,7 @@ export default function MobileNav() {
 				{/* Mobile Menu Overlay */}
 				<div
 					className={`main-nav--mobile-overlay ${isMenuOpen ? "active" : ""}`}
+					id="mobile-menu"
 				>
 					<div className="main-nav--mobile-menu">
 						<div className="main-nav--mobile-bg-top">
@@ -139,6 +159,13 @@ export default function MobileNav() {
 								<div
 									className="main-nav--mobile-link"
 									onClick={() => toggleSubMenu(0)}
+									role="button"
+									tabIndex={0}
+									aria-expanded={!!openSubMenus[0]}
+									aria-controls="submenu-0"
+									onKeyDown={(e) =>
+										handleToggleKeyDown(e, () => toggleSubMenu(0))
+									}
 								>
 									치과소개
 									<span className="main-nav--mobile-arrow">
@@ -152,32 +179,53 @@ export default function MobileNav() {
 									className={`main-nav--mobile-item-sub ${
 										openSubMenus[0] ? "active" : ""
 									}`}
+									id="submenu-0"
 								>
 									<ul className="main-nav--mobile-item-sub-list">
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/about-us"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												치과소개
-											</a>
+											</Link>
 										</li>
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/doctors-profile"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												의료진 소개
-											</a>
+											</Link>
 										</li>
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/facilities"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												시설및기공소
-											</a>
+											</Link>
 										</li>
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/devices"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												장비소개
-											</a>
+											</Link>
 										</li>
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/hours-and-find-us-here"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												진료시간 및 오시는길
-											</a>
+											</Link>
 										</li>
 									</ul>
 								</div>
@@ -186,6 +234,13 @@ export default function MobileNav() {
 								<div
 									className="main-nav--mobile-link"
 									onClick={() => toggleSubMenu(1)}
+									role="button"
+									tabIndex={0}
+									aria-expanded={!!openSubMenus[1]}
+									aria-controls="submenu-1"
+									onKeyDown={(e) =>
+										handleToggleKeyDown(e, () => toggleSubMenu(1))
+									}
 								>
 									치아교정
 									<span className="main-nav--mobile-arrow">
@@ -199,22 +254,35 @@ export default function MobileNav() {
 									className={`main-nav--mobile-item-sub ${
 										openSubMenus[1] ? "active" : ""
 									}`}
+									id="submenu-1"
 								>
 									<ul className="main-nav--mobile-item-sub-list">
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/orthodontics"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												치아교정
-											</a>
+											</Link>
 										</li>
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/orthodontics/invisalign"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												인비절라인
-											</a>
+											</Link>
 										</li>
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/orthodontics/clip-pyc"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												클리피씨
-											</a>
+											</Link>
 										</li>
 									</ul>
 								</div>
@@ -223,6 +291,13 @@ export default function MobileNav() {
 								<div
 									className="main-nav--mobile-link"
 									onClick={() => toggleSubMenu(2)}
+									role="button"
+									tabIndex={0}
+									aria-expanded={!!openSubMenus[2]}
+									aria-controls="submenu-2"
+									onKeyDown={(e) =>
+										handleToggleKeyDown(e, () => toggleSubMenu(2))
+									}
 								>
 									임플란트
 									<span className="main-nav--mobile-arrow">
@@ -236,27 +311,44 @@ export default function MobileNav() {
 									className={`main-nav--mobile-item-sub ${
 										openSubMenus[2] ? "active" : ""
 									}`}
+									id="submenu-2"
 								>
 									<ul className="main-nav--mobile-item-sub-list">
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/implants"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												임플란트
-											</a>
+											</Link>
 										</li>
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/implants/bone-graft"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												뼈이식 임플란트
-											</a>
+											</Link>
 										</li>
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/implants/full-mouth"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												전체임플란트
-											</a>
+											</Link>
 										</li>
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/implants/dentures"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												임플란트 틀니
-											</a>
+											</Link>
 										</li>
 									</ul>
 								</div>
@@ -265,6 +357,13 @@ export default function MobileNav() {
 								<div
 									className="main-nav--mobile-link"
 									onClick={() => toggleSubMenu(3)}
+									role="button"
+									tabIndex={0}
+									aria-expanded={!!openSubMenus[3]}
+									aria-controls="submenu-3"
+									onKeyDown={(e) =>
+										handleToggleKeyDown(e, () => toggleSubMenu(3))
+									}
 								>
 									심미치료
 									<span className="main-nav--mobile-arrow">
@@ -278,22 +377,35 @@ export default function MobileNav() {
 									className={`main-nav--mobile-item-sub ${
 										openSubMenus[3] ? "active" : ""
 									}`}
+									id="submenu-3"
 								>
 									<ul className="main-nav--mobile-item-sub-list">
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/aesthetics"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												화이티니 라미네이트
-											</a>
+											</Link>
 										</li>
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/aesthetics/teeth-whitening"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												치아미백
-											</a>
+											</Link>
 										</li>
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/aesthetics/gum-aesthetics"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												잇몸성형
-											</a>
+											</Link>
 										</li>
 									</ul>
 								</div>
@@ -302,6 +414,13 @@ export default function MobileNav() {
 								<div
 									className="main-nav--mobile-link"
 									onClick={() => toggleSubMenu(4)}
+									role="button"
+									tabIndex={0}
+									aria-expanded={!!openSubMenus[4]}
+									aria-controls="submenu-4"
+									onKeyDown={(e) =>
+										handleToggleKeyDown(e, () => toggleSubMenu(4))
+									}
 								>
 									일반진료
 									<span className="main-nav--mobile-arrow">
@@ -315,32 +434,53 @@ export default function MobileNav() {
 									className={`main-nav--mobile-item-sub ${
 										openSubMenus[4] ? "active" : ""
 									}`}
+									id="submenu-4"
 								>
 									<ul className="main-nav--mobile-item-sub-list">
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/treatments"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												충치치료
-											</a>
+											</Link>
 										</li>
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/treatments/root-canal"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												신경치료
-											</a>
+											</Link>
 										</li>
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/treatments/wisdom-tooth-removal"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												사랑니 발치
-											</a>
+											</Link>
 										</li>
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/treatments/tmj-treatment"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												턱관절치료
-											</a>
+											</Link>
 										</li>
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/treatments/gum-disease-treatment"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												잇몸치료
-											</a>
+											</Link>
 										</li>
 									</ul>
 								</div>
@@ -349,6 +489,13 @@ export default function MobileNav() {
 								<div
 									className="main-nav--mobile-link"
 									onClick={() => toggleSubMenu(5)}
+									role="button"
+									tabIndex={0}
+									aria-expanded={!!openSubMenus[5]}
+									aria-controls="submenu-5"
+									onKeyDown={(e) =>
+										handleToggleKeyDown(e, () => toggleSubMenu(5))
+									}
 								>
 									커뮤니티
 									<span className="main-nav--mobile-arrow">
@@ -362,17 +509,26 @@ export default function MobileNav() {
 									className={`main-nav--mobile-item-sub ${
 										openSubMenus[5] ? "active" : ""
 									}`}
+									id="submenu-5"
 								>
 									<ul className="main-nav--mobile-item-sub-list">
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/community/notice"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												공지사항
-											</a>
+											</Link>
 										</li>
 										<li className="main-nav--mobile-item-sub-item">
-											<a href="/" className="main-nav--mobile-item-sub-link">
+											<Link
+												to="/community/with-star"
+												className="main-nav--mobile-item-sub-link"
+												onClick={closeMenu}
+											>
 												with STAR
-											</a>
+											</Link>
 										</li>
 									</ul>
 								</div>
@@ -383,6 +539,7 @@ export default function MobileNav() {
 								<a
 									href="https://www.instagram.com/white.dream.en"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<img src="/assets/icons/instagram.svg" alt="instagram link" />
 								</a>
@@ -391,6 +548,7 @@ export default function MobileNav() {
 								<a
 									href="https://www.facebook.com/white.dream.en"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<img src="/assets/icons/facebook.svg" alt="facebook link" />
 								</a>
@@ -399,15 +557,20 @@ export default function MobileNav() {
 								<a
 									href="https://booking.naver.com/booking/13/bizes/206339"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<img src="/assets/icons/blog.svg" alt="blog link" />
 								</a>
 							</div>
 						</div>
 						<div className="main-nav--mobile-login">
-							<a href="/">Login</a>
+							<Link to="/" onClick={closeMenu}>
+								Login
+							</Link>
 							<span> / </span>
-							<a href="/">Sign up</a>
+							<Link to="/" onClick={closeMenu}>
+								Sign up
+							</Link>
 						</div>
 					</div>
 				</div>

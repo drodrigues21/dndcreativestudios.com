@@ -1,13 +1,13 @@
 /* Mobile Navigation */
 .main-nav--mobile-container {
-	display: none; /* Hidden by default on desktop */
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
 	height: 8rem;
 	background-color: #f7f7f7;
-	z-index: 1000; /* High z-index to stay above menu */
+	/* padding-bottom: max(var(--space-1), env(safe-area-inset-bottom)); */
+	z-index: 10000; /* High z-index to stay above menu */
 }
 
 .main-nav--mobile {
@@ -254,35 +254,9 @@
 	color: #000000;
 }
 
-/* Modal Styles */
-.modal-overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: rgba(0, 0, 0, 0.5);
-	z-index: 9999;
-}
-
-.modal-content {
-	position: relative;
-	background: #ffffff;
-	overflow-y: auto;
-}
-
-.modal-content.confirmation-modal {
-	position: relative;
-}
-
 /* Mobile only - show on mobile */
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
 	.main-nav--mobile-container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		display: none;
 	}
 }

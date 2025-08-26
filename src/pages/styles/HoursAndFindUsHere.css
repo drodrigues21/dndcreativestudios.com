@@ -1,0 +1,154 @@
+.hours-and-find-us-here-hero--img-desktop,
+.hours-and-find-us-here-hero--title-en,
+.hours-and-find-us-here-location--desktop {
+	display: none;
+}
+
+.hours-and-find-us-here-hero--container {
+	margin-top: 5rem;
+}
+
+.hours-and-find-us-here-hero--img-mobile {
+	width: 100%;
+}
+
+.hours-and-find-us-here-hero--content-container {
+	padding: 0 2rem;
+}
+
+.hours-and-find-us-here-hero--title-kr {
+	font-size: 2.2rem;
+	font-weight: 400;
+	line-height: 3.4rem;
+	margin: 2rem 0 3rem;
+}
+
+.hours-and-find-us-here-hero--title-kr span {
+	display: block;
+}
+
+.hours-and-find-us-here-section-1 {
+	margin-top: 5rem;
+}
+
+.hours-and-find-us-here-section-1--img-container {
+	display: none;
+}
+
+.hours-and-find-us-here-section-1--content-container {
+	padding: 0 2rem;
+}
+
+.hours-and-find-us-here-section-1--hours h3,
+.hours-and-find-us-here-section-1--break h3 {
+	font-size: 2.5rem;
+	font-weight: 400;
+	line-height: 3.2rem;
+	color: #252525;
+}
+
+.hours-and-find-us-here-section-1--hours h3 span,
+.hours-and-find-us-here-section-1--break h3 span {
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #979797;
+}
+
+.hours-and-find-us-here-section-1--hours-info,
+.hours-and-find-us-here-section-1--break-info {
+	background-color: #f4f4f4;
+	padding: 2rem 3rem;
+}
+
+.hours-and-find-us-here-section-1--hours-info-item,
+.hours-and-find-us-here-section-1--break-info-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+
+.hours-and-find-us-here-section-1--hours-info-item h4,
+.hours-and-find-us-here-section-1--break-info-item h4 {
+	flex: 1;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.6rem;
+	color: #5d5d5d;
+}
+
+.hours-and-find-us-here-section-1--hours-info-item p,
+.hours-and-find-us-here-section-1--break-info-item p {
+	flex: 2;
+	font-family: var(--font-en);
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #252525;
+}
+
+.hours-and-find-us-here-section-1--hours-info-item p span {
+	display: inline-block;
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	text-align: center;
+	color: #ffffff;
+	background-color: #01c2ca;
+	margin-left: 1rem;
+	padding: 0.5rem 1.5rem;
+	border-radius: 5rem;
+}
+
+.hours-and-find-us-here-location--title {
+	font-family: var(--font-en-1);
+	font-size: 2.6rem;
+	font-weight: 600;
+	line-height: 3.2rem;
+	text-transform: capitalize;
+	color: #252525;
+	padding: 9.5rem 2rem 1.5rem;
+}
+
+.hours-and-find-us-here-location--title span {
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #979797;
+}
+
+.hours-and-find-us-here-location--map-cta-container {
+	width: 100%;
+	max-width: 32.5rem;
+	background-color: #252525;
+	margin: 3.5rem auto 9rem;
+	padding: 0 2rem;
+}
+
+.hours-and-find-us-here-location--map-cta {
+	display: block;
+	width: 100%;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 4rem;
+	text-align: center;
+	color: #ffffff;
+	padding: 0.75rem 0;
+}
+
+@media (min-width: 1000px) {
+	.hours-and-find-us-here-location--mobile {
+		display: none;
+	}
+	.hours-and-find-us-here-section-1--img-container {
+		display: block;
+	}
+
+	/* Location CTA */
+	.hours-and-find-us-here-location--cta a img {
+		transform: rotate(180deg);
+	}
+}

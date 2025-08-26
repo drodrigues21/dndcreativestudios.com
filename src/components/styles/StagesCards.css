@@ -1,0 +1,61 @@
+/* ----------------------------------- */
+/* Square Cards - Mobile Colored Cards */
+/* ----------------------------------- */
+.ortho-section--types-of-braces--cards-container {
+	border: 1px solid #01c2ca;
+}
+
+.stages-cards--container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2.5rem;
+	margin-top: 5rem;
+}
+
+.stages-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.stages-card--pill {
+	padding: 1rem 1.5rem;
+	border-radius: 40rem;
+	background-color: #01c2ca;
+}
+
+.stages-card--stage {
+	font-family: var(--font-en-1);
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #fff;
+	margin: 0;
+}
+
+.stages-card--title {
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+	text-align: center;
+	color: #252525;
+	margin: 0 0 1.5rem;
+}
+
+.stages-card--description-container {
+	margin-bottom: 2rem;
+}
+
+.stages-card--description-container p {
+	width: 13rem;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	text-align: center;
+	color: #5d5d5d;
+	margin: 0;
+}
+
+.stages-card--description-1 {
+	margin-bottom: 1rem;
+}

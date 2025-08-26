@@ -1,0 +1,56 @@
+/* DESKTOP IMAGE AND TITLE*/
+.square-card-with-img--desktop,
+.square-card-with-img-content--title {
+	display: none;
+}
+
+.square-cards-with-img--container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.square-card-with-img--card {
+	display: flex;
+	gap: 0.5rem;
+	background-color: #f2f2f2;
+}
+
+.square-card-with-img-images {
+	flex: 0 0 13rem;
+	overflow: hidden;
+}
+
+.square-card-with-img--mobile {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.square-card-with-img-content {
+	/* flex: 2; */
+	padding: 1rem;
+}
+
+.square-card-with-img-content--pill-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.square-card-with-img-content--pill {
+	font-family: var(--font-en-1);
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.4rem;
+	color: #fff;
+	padding: 1rem 1.75rem;
+	border-radius: 4rem;
+
+	background-color: #404040;
+}
+
+.square-card-with-img-content--p {
+	font-size: 1.4rem;
+	line-height: 2.2rem;
+}

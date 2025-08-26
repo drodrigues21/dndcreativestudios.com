@@ -1,20 +1,76 @@
-.doctors-profile--title {
-	display: flex;
-	align-items: center;
-	gap: 0.8rem;
+.page-doctorsprofile {
+	margin-bottom: 15rem;
 }
 
-.doctors-profile--title h2 {
-	font-size: 55px;
+.page-doctorsprofile--hero {
+	margin-top: 3.6rem;
 }
 
-.doctors-profile--title h3 {
-	font-size: 24px;
+.doctors-profile-hero--img-mobile {
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+.doctors-profile-hero--title-en,
+.doctors-profile-hero--img {
+	display: none;
+}
+
+.doctors-profile-hero--title-kr {
+	font-size: 2.2rem;
+	font-weight: 400;
+	line-height: 3.4rem;
+	padding: 0 2rem;
+	margin-bottom: 5rem;
+}
+
+.doctors-profile-hero--title-kr span {
+	display: block;
+}
+
+.page-doctorsprofile--section-1 {
+	padding: 0 2rem;
+}
+
+.page-doctorsprofile--section-1--title-en {
+	font-family: var(--font-en-1);
+	font-size: 2.6rem;
+	font-weight: 600;
+	line-height: 3.2rem;
+	color: #252525;
+	margin: 0;
+}
+
+.page-doctorsprofile--section-1--title-kr {
+	font-size: 1.6rem;
 	font-weight: 500;
+	line-height: 1.6rem;
 	color: #979797;
+	margin: 0 0 4.5rem;
+}
+
+.doctors-profile-container {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
 }
 
 .doctors-profile-title--cards {
-	display: flex;
-	gap: 1.5rem;
+	/* border: 3px solid red; */
+}
+
+.doctors-profile--card {
+	margin-bottom: 4rem;
+}
+
+@media (min-width: 1000px) {
+	.doctors-profile-hero--title-kr,
+	.doctors-profile-hero--img-mobile {
+		display: none;
+	}
+
+	.doctors-profile-hero--title-en,
+	.doctors-profile-hero--img {
+		display: block;
+	}
 }

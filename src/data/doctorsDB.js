@@ -4,12 +4,14 @@ export const doctorsDB = [
 		name: "정수윤",
 		role: "대표원장",
 		specialty: "Prosthodontist",
+		specialtyName: "보철과",
 		imageProfile: "/assets/images/doctors/doctors_detail01.jpg",
 		imageCard: "/assets/images/doctors/doctors_prosthodontist01.jpg",
 		imageHome: "/assets/images/mainpage/doctors01.jpg",
 		description: [
 			"환자분들에게 만족스러운 치료결과를 제공하는것.",
 			"이보다 나은 가치는 적어도화이트드림치과에서는 없습니다.",
+			"환자분들에게 만족스러운 치료 결과를 제공하는것...",
 		],
 		career: [
 			"현) 화이트드림치과 대표원장",
@@ -30,12 +32,14 @@ export const doctorsDB = [
 		name: "김상철",
 		role: "수석원장",
 		specialty: "Orthodontist",
+		specialtyName: "교정과",
 		imageProfile: "/assets/images/doctors/doctors_detail02.jpg",
 		imageCard: "/assets/images/doctors/doctors_orthodontist01.jpg",
 		imageHome: "/assets/images/mainpage/doctors02.jpg",
 		description: [
 			"교정학에 기반한 안전성이 검증된 치료방법으로,",
 			"환자분들의 밝은 미소를 약속드립니다.",
+			"교정학에 기반한 안정성이 검증된 치료방법으로...",
 		],
 		career: [
 			"현) 대한치과교정학회 평의원회 의장",
@@ -57,12 +61,14 @@ export const doctorsDB = [
 		name: "윤재희",
 		role: "원장",
 		specialty: "Orthodontist",
+		specialtyName: "교정과",
 		imageProfile: "/assets/images/doctors/doctors_detail03.jpg",
 		imageCard: "/assets/images/doctors/doctors_orthodontist02.jpg",
 		imageHome: "/assets/images/mainpage/doctors03.jpg",
 		description: [
 			"바른 치아, 건강한 변화, 그리고 만족스러운 결과까지.",
 			"제가 지향하는 단 하나의 가치입니다.",
+			"바른 치아, 건강한 변화, 그리고 만족스러운...",
 		],
 		career: [
 			"통합치의학과 전문의",
@@ -84,12 +90,14 @@ export const doctorsDB = [
 		name: "이나래",
 		role: "원장",
 		specialty: "Orthodontist",
+		specialtyName: "교정과",
 		imageProfile: "/assets/images/doctors/doctors_detail04.jpg",
 		imageCard: "/assets/images/doctors/doctors_orthodontist03.jpg",
 		imageHome: "/assets/images/mainpage/doctors04.jpg",
 		description: [
 			"결과로 증명하는 진료, 신뢰로 쌓아가는 관계.",
 			"저는 그 가치를 늘 지켜갑니다.",
+			"결과로 증명하는 진료, 신뢰로 쌓아가는 관계...",
 		],
 		career: [
 			"치과교정과 전문의",
@@ -108,6 +116,7 @@ export const doctorsDB = [
 		name: "박혜미",
 		role: "원장",
 		specialty: "Orthodontist",
+		specialtyName: "교정과",
 		imageProfile: "/assets/images/doctors/doctors_detail05.jpg",
 		imageCard: "/assets/images/doctors/doctors_orthodontist04.jpg",
 		description: [
@@ -131,6 +140,7 @@ export const doctorsDB = [
 		name: "양주연",
 		role: "원장",
 		specialty: "Prosthodontist",
+		specialtyName: "보철과",
 		imageProfile: "/assets/images/doctors/doctors_detail06.jpg",
 		imageCard: "/assets/images/doctors/doctors_prosthodontist02.jpg",
 		description: [
@@ -153,6 +163,7 @@ export const doctorsDB = [
 		name: "선새미",
 		role: "원장",
 		specialty: "Prosthodontist",
+		specialtyName: "보철과",
 		imageProfile: "/assets/images/doctors/doctors_detail07.jpg",
 		imageCard: "/assets/images/doctors/doctors_prosthodontist03.jpg",
 		description: [
@@ -171,6 +182,7 @@ export const doctorsDB = [
 		name: "최재석",
 		role: "원장",
 		specialty: "Prosthodontist",
+		specialtyName: "보철과",
 		imageProfile: "/assets/images/doctors/doctors_detail08.jpg",
 		imageCard: "/assets/images/doctors/doctors_prosthodontist04.jpg",
 		description: [

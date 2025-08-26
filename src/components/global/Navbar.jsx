@@ -1,171 +1,175 @@
+import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 
 export default function Navbar() {
 	return (
 		<>
 			{/* Desktop Navigation */}
-			<nav className="main-header--nav">
+			<nav className="main-header--nav" aria-label="Primary navigation">
 				<ul className="main-header--nav-list">
 					<li className="main-header--nav-item">
-						<a href="/" className="main-header--nav-link">
+						<NavLink to="/about-us" className="main-header--nav-link">
 							치과소개
-						</a>
+						</NavLink>
 						<div className="main-header--nav-item-sub">
 							<ul className="main-header--nav-item-sub-list">
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/about-us" className="main-header--nav-item-sub-link">
 										치과소개
-									</a>
+									</NavLink>
 								</li>
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink
+										to="/doctors-profile"
+										className="main-header--nav-item-sub-link"
+									>
 										의료진 소개
-									</a>
+									</NavLink>
 								</li>
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/facilities" className="main-header--nav-item-sub-link">
 										시설및기공소
-									</a>
+									</NavLink>
 								</li>
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/devices" className="main-header--nav-item-sub-link">
 										장비소개
-									</a>
+									</NavLink>
 								</li>
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/hours-and-find-us-here" className="main-header--nav-item-sub-link">
 										진료시간 및 오시는길
-									</a>
+									</NavLink>
 								</li>
 							</ul>
 						</div>
 					</li>
 					<li className="main-header--nav-item">
-						<a href="/" className="main-header--nav-link">
+						<NavLink to="/orthodontics" className="main-header--nav-link">
 							치아교정
-						</a>
+						</NavLink>
 						<div className="main-header--nav-item-sub">
 							<ul className="main-header--nav-item-sub-list">
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/orthodontics" className="main-header--nav-item-sub-link">
 										치아교정
-									</a>
+									</NavLink>
 								</li>
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/orthodontics/invisalign" className="main-header--nav-item-sub-link">
 										인비절라인
-									</a>
+									</NavLink>
 								</li>
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/orthodontics/clip-pyc" className="main-header--nav-item-sub-link">
 										클리피씨
-									</a>
+									</NavLink>
 								</li>
 							</ul>
 						</div>
 					</li>
 					<li className="main-header--nav-item">
-						<a href="/" className="main-header--nav-link">
+						<NavLink to="/implants" className="main-header--nav-link">
 							임플란트
-						</a>
+						</NavLink>
 						<div className="main-header--nav-item-sub">
 							<ul className="main-header--nav-item-sub-list">
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/implants" className="main-header--nav-item-sub-link">
 										임플란트
-									</a>
+									</NavLink>
 								</li>
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/implants/bone-graft" className="main-header--nav-item-sub-link">
 										뼈이식 임플란트
-									</a>
+									</NavLink>
 								</li>
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/implants/full-mouth" className="main-header--nav-item-sub-link">
 										전체임플란트
-									</a>
+									</NavLink>
 								</li>
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/implants/dentures" className="main-header--nav-item-sub-link">
 										임플란트 틀니
-									</a>
+									</NavLink>
 								</li>
 							</ul>
 						</div>
 					</li>
 					<li className="main-header--nav-item">
-						<a href="/" className="main-header--nav-link">
+						<NavLink to="/aesthetics" className="main-header--nav-link">
 							심미치료
-						</a>
+						</NavLink>
 						<div className="main-header--nav-item-sub">
 							<ul className="main-header--nav-item-sub-list">
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/aesthetics" className="main-header--nav-item-sub-link">
 										화이티니 라미네이트
-									</a>
+									</NavLink>
 								</li>
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/aesthetics/teeth-whitening" className="main-header--nav-item-sub-link">
 										치아미백
-									</a>
+									</NavLink>
 								</li>
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/aesthetics/gum-aesthetics" className="main-header--nav-item-sub-link">
 										잇몸성형
-									</a>
+									</NavLink>
 								</li>
 							</ul>
 						</div>
 					</li>
 					<li className="main-header--nav-item">
-						<a href="/" className="main-header--nav-link">
+						<NavLink to="/treatments" className="main-header--nav-link">
 							일반진료
-						</a>
+						</NavLink>
 						<div className="main-header--nav-item-sub">
 							<ul className="main-header--nav-item-sub-list">
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/treatments" className="main-header--nav-item-sub-link">
 										충치치료
-									</a>
+									</NavLink>
 								</li>
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/treatments/root-canal" className="main-header--nav-item-sub-link">
 										신경치료
-									</a>
+									</NavLink>
 								</li>
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/treatments/wisdom-tooth-removal" className="main-header--nav-item-sub-link">
 										사랑니 발치
-									</a>
+									</NavLink>
 								</li>
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/treatments/tmj-treatment" className="main-header--nav-item-sub-link">
 										턱관절치료
-									</a>
+									</NavLink>
 								</li>
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/treatments/gum-disease-treatment" className="main-header--nav-item-sub-link">
 										잇몸치료
-									</a>
+									</NavLink>
 								</li>
 							</ul>
 						</div>
 					</li>
 					<li className="main-header--nav-item">
-						<a href="/" className="main-header--nav-link">
+						<NavLink to="/community/notice" className="main-header--nav-link">
 							커뮤니티
-						</a>
+						</NavLink>
 						<div className="main-header--nav-item-sub">
 							<ul className="main-header--nav-item-sub-list">
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/community/notice" className="main-header--nav-item-sub-link">
 										공지사항
-									</a>
+									</NavLink>
 								</li>
 								<li className="main-header--nav-item-sub-item">
-									<a href="/" className="main-header--nav-item-sub-link">
+									<NavLink to="/community/with-star" className="main-header--nav-item-sub-link">
 										with STAR
-									</a>
+									</NavLink>
 								</li>
 							</ul>
 						</div>

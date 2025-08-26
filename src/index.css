@@ -1,29 +1,106 @@
-/* FONTS USED: */
-/* Montserrat */
-/* font-family: "Montserrat", sans-serif; */
-
-/* Noto Sans KR */
-/* font-family: "Noto Sans KR", sans-serif; */
-
-/* Poppins */
-/* font-family: "Poppins", sans-serif; */
-
 :root {
-	/* Colors */
-	--color-dark: #252525;
-	--color-dark-gray: #404040;
-	--color-gray: #5d5d5d;
-	--color-light-gray: #979797;
-	--color-light-gray-2: #b0b0b0;
-	--color-gradient: linear-gradient(to bottom, #fee7ff, #c5fdfa);
-	--color-teal: #6cb0ad;
-	--color-light-teal: #bee6e4;
-	--color-cyan: #01c2ca;
-	--color-light-cyan: #c3f8f5;
-	--color-light-cyan-2: #ecf5f5;
-	--color-pink: #ef59f4;
-	--color-light-pink: #f4eff8;
-	--color-white: #ffffff;
+	/* Font stacks */
+	--font-en-1: "Poppins", ui-sans-serif, system-ui, -apple-system, Segoe UI,
+		Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+		"Segoe UI Emoji";
+	--font-en-2: "Montserrat", ui-sans-serif, system-ui, -apple-system, Segoe UI,
+		Roboto, "Helvetica Neue", Arial;
+	--font-kr: "Noto Sans KR", ui-sans-serif, system-ui, -apple-system, Segoe UI,
+		"Helvetica Neue", Arial;
+
+	/* Typography: */
+	--fs-poppins-12: 1.6rem;
+	--fs-poppins-14: 1.8rem;
+	--fs-poppins-16: 2.2rem;
+	--fs-poppins-18: 2.4rem;
+	--fs-poppins-33: 4.4rem;
+	--fs-montserrat-38: 5rem;
+	--fs-poppins-52: 7rem;
+
+	--fs-kr-1: 1.6rem;
+	--fs-kr-2: 1.8rem;
+	--fs-kr-3: 2.2rem;
+	--fs-kr-4: 2.4rem;
+	--fs-kr-5: 2.6rem;
+	--fs-kr-6: 3rem;
+	--fs-kr-7: 3.2rem;
+	--fs-kr-8: 3.5rem;
+
+	/* Line-height & weights */
+	--lh-tight: 1.15;
+	--lh-normal: 1.5;
+	--lh-loose: 1.7;
+	--fw-light: 300;
+	--fw-regular: 400;
+	--fw-medium: 500;
+	--fw-semibold: 600;
+	--fw-bold: 700;
+
+	/* Colors: raw palette → semantic */
+	--raw-gray-900: #252525;
+	--raw-gray-800: #404040;
+	--raw-gray-700: #5d5d5d;
+	--raw-gray-500: #979797;
+	--raw-gray-400: #b0b0b0;
+	--raw-pink-50: #fee7ff;
+	--raw-cyan-50: #c5fdfa;
+	--raw-teal-50: #c3f8f5;
+	--raw-teal-100: #bee6e4;
+	--raw-teal-400: #6cb0ad;
+	--raw-cyan-500: #01c2ca;
+	--raw-purple-50: #f4eff8;
+	--raw-teal-25: #ecf5f5;
+	--raw-pink-500: #ef59f4;
+
+	--text-primary: var(--raw-gray-900);
+	--text-secondary: var(--raw-gray-700);
+	--text-muted: var(--raw-gray-500);
+	--bg-default: #fff;
+	--bg-soft: var(--raw-purple-50);
+	--surface: #fff;
+	--border: var(--raw-gray-400);
+	--accent: var(--raw-cyan-500);
+	--accent-soft: var(--raw-cyan-50);
+	--decor-teal: var(--raw-teal-400);
+	--decor-pink: var(--raw-pink-500);
+
+	/* Spacing (4-based) */
+	--space-0: 0;
+	--space-1: 0.4rem;
+	--space-2: 0.8rem;
+	--space-3: 1.2rem;
+	--space-4: 1.6rem;
+	--space-5: 2.4rem;
+	--space-6: 3.2rem;
+	--space-7: 4rem;
+	--space-8: 4.8rem;
+	--space-9: 6.4rem;
+	--space-10: 8rem;
+
+	/* Radii */
+	--radius-sm: 0.6rem;
+	--radius-md: 1.2rem;
+	--radius-lg: 2rem;
+	--radius-xl: 3.2rem;
+
+	/* Shadows */
+	--shadow-1: 0 2px 4px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.03);
+	--shadow-2: 0 6px 18px rgba(0, 0, 0, 0.08);
+	--shadow-3: 0 14px 34px rgba(0, 0, 0, 0.12);
+
+	/* Z-index */
+	--z-base: 0;
+	--z-dropdown: 1000;
+	--z-sticky: 1100;
+	--z-overlay: 1200;
+	--z-modal: 1300;
+	--z-toast: 1400;
+
+	/* Breakpoints */
+	--breakpoint-sm: 60rem;
+	--breakpoint-md: 76.8rem;
+	--breakpoint-lg: 100rem;
+	--breakpoint-xl: 128rem;
 }
 
 *,
@@ -58,4 +135,8 @@ ul {
 img {
 	max-width: 100%;
 	display: block;
+}
+
+.container {
+	margin-bottom: 13rem;
 }

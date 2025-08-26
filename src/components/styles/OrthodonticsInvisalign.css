@@ -1,0 +1,45 @@
+.invis-section-benefits {
+	padding: 0 2rem;
+	margin-bottom: 10rem;
+}
+
+/* DESKTOP DOCTOR IMAGE */
+.invis-specialist-img-desktop {
+	display: none;
+}
+
+.invis-specialist-img-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+	padding: 0 2rem;
+}
+
+.invis-specialist-img-mobile {
+	width: 100%;
+}
+
+.invis-specialist--title {
+	font-size: 2.2rem;
+	font-weight: 400;
+	line-height: 3.4rem;
+	padding: 0 2rem;
+	margin-bottom: 2.5rem;
+}
+
+.invis-specialist--title span {
+	display: block;
+}
+
+.invis-specialist--content {
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+	padding: 0 2rem;
+	margin-bottom: 13rem;
+}
+
+.invis-specialist--content span {
+	display: block;
+}

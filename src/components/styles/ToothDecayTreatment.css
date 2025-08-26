@@ -1,0 +1,67 @@
+.tooth-decay-treatment--hero img {
+	padding: 2rem 3rem 0;
+}
+
+.tooth-decay-treatment--stages-container {
+	margin-bottom: 6rem;
+}
+
+.tooth-decay-treatment--stages-container p {
+	font-size: 1.4rem;
+	line-height: 2rem;
+	color: #5d5d5d;
+}
+
+/* Desktop Title Off */
+.tooth-decay-treatment-title--desktop {
+	display: none;
+}
+
+.tooth-decay-treatment--timing {
+	padding: 0 2rem;
+}
+
+.tooth-decay-treatment--timing-content-img {
+	margin: 4rem 0 2rem;
+}
+
+.tooth-decay-treatment--timing-content-text h5 {
+	font-size: 2.2rem;
+	font-weight: 500;
+	color: #252525;
+	margin: 0;
+}
+
+.tooth-decay-treatment--timing-content-text h5:nth-child(2) {
+	color: #01c2ca;
+	margin-top: 2rem;
+}
+
+.tooth-decay-treatment--timing-content-text h5 span {
+	font-family: var(--font-en-1);
+	font-size: 3rem;
+	line-height: 3rem;
+	margin-right: 1.2rem;
+}
+
+.tooth-decay-treatment--timing-content-text p {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	color: #5d5d5d;
+	margin: 1rem 0 0 4.5rem;
+}
+
+.tooth-decay-treatment--timing-content-text p span {
+	display: block;
+}
+
+/* Desktop */
+@media (min-width: 1000px) {
+	.tooth-decay-treatment-title--desktop {
+		display: block;
+	}
+
+	.tooth-decay-treatment-title--mobile {
+		display: none;
+	}
+}

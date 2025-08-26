@@ -80,7 +80,7 @@ export default function ConsultationForm({
 					</div>
 				</div>
 				<div className="consultation-form--form">
-					<form onSubmit={onSubmit}>
+					<form className="consultation-form" onSubmit={onSubmit}>
 						<div className="consultation-form--form-item">
 							<label htmlFor="department">이메일</label>
 							<select name="department" id="department">

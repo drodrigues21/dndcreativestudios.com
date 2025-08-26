@@ -1,0 +1,102 @@
+/* ----------------------------------- */
+/* Square Cards - Mobile Colored Cards */
+/* Orthodontics Home, Implant Bone Graft
+   & Gum Aestetics ------------------- */
+/* ----------------------------------- */
+.types-of-braces--ortho .square-card,
+.implant-bonegraft--materials .square-card,
+.types-of-surgery-cards--container .square-card {
+	margin-bottom: 1rem;
+	padding: 2rem;
+}
+
+.types-of-braces--ortho .square-card:nth-child(odd),
+.implant-bonegraft--materials .square-card:nth-child(odd),
+.types-of-surgery-cards--container .square-card:nth-child(odd) {
+	background-color: #ecf5f5;
+}
+
+.types-of-braces--ortho .square-card:nth-child(even),
+.implant-bonegraft--materials .square-card:nth-child(even),
+.types-of-surgery-cards--container .square-card:nth-child(even) {
+	background-color: #f4eff8;
+}
+
+.types-of-braces--ortho .square-card--img,
+.implant-bonegraft--materials .square-card--img,
+.types-of-surgery-cards--container .square-card--img {
+	display: none;
+}
+
+.types-of-braces--ortho .square-card--title,
+.implant-bonegraft--materials .square-card--title,
+.types-of-surgery-cards--container .square-card--title {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	font-size: 2.2rem;
+	font-weight: 500;
+	line-height: 2.2rem;
+	color: #404040;
+	margin: 0 0 1.5rem;
+}
+
+.square-card--sub-title {
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 2.2rem;
+	color: #979797;
+	margin: 0 0 2.5rem;
+}
+
+.types-of-braces--ortho .square-card--pill-container,
+.implant-bonegraft--materials .square-card--pill-container,
+.types-of-surgery-cards--container .square-card--pill-container {
+	display: flex;
+	align-items: flex-start;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.types-of-braces--ortho .square-card--p,
+.implant-bonegraft--materials .square-card--p,
+.types-of-surgery-cards--container .square-card--p {
+	flex: 3;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 2.4rem;
+	color: #404040;
+	margin: 0 0 2.5rem;
+}
+
+.types-of-braces--ortho .square-card--black-pill,
+.types-of-braces--ortho .square-card--white-pill,
+.implant-bonegraft--materials .square-card--black-pill,
+.implant-bonegraft--materials .square-card--white-pill,
+.types-of-surgery-cards--container .square-card--black-pill,
+.types-of-surgery-cards--container .square-card--white-pill {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	margin-right: 1.2rem;
+	padding: 1rem 0.5rem;
+	border-radius: 4rem;
+}
+
+.types-of-braces--ortho .square-card--black-pill,
+.implant-bonegraft--materials .square-card--black-pill,
+.types-of-surgery-cards--container .square-card--black-pill {
+	color: #fff;
+	background-color: #404040;
+}
+
+.types-of-braces--ortho .square-card--white-pill,
+.implant-bonegraft--materials .square-card--white-pill,
+.types-of-surgery-cards--container .square-card--white-pill {
+	color: #404040;
+	background-color: #fff;
+}

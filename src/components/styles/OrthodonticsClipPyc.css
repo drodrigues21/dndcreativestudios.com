@@ -1,0 +1,67 @@
+/* Hero section */
+.hero-section--title-kr-clippyc-desktop {
+	display: none;
+}
+
+/* Benefits section */
+.clp-section-benefits--title {
+	font-family: var(--font-en-1);
+	font-size: 2.6rem;
+	font-weight: 600;
+	line-height: 3.2rem;
+	margin: 0 0 3rem;
+	padding: 0 2rem;
+}
+
+.clp-section-benefits--title span {
+	display: block;
+	font-family: var(--font-kr);
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #979797;
+}
+
+.benefits-cards--clippyc {
+	padding: 0 2rem;
+}
+
+/* DESKTOP DOCTOR IMAGE */
+.clp-specialist-img-desktop {
+	display: none;
+}
+
+.clp-specialist-img-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+	padding: 0 2rem;
+}
+
+.clp-specialist-img-mobile {
+	width: 100%;
+}
+
+.clp-specialist--title {
+	font-size: 2.2rem;
+	font-weight: 400;
+	line-height: 3.4rem;
+	padding: 0 2rem;
+	margin-bottom: 2.5rem;
+}
+
+.clp-specialist--title span {
+	display: block;
+}
+
+.clp-specialist--content {
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+	padding: 0 2rem;
+	margin-bottom: 13rem;
+}
+
+.clp-specialist--content span {
+	display: block;
+}

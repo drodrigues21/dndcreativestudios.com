@@ -30,6 +30,8 @@
 	overflow-y: hidden;
 	scroll-behavior: smooth;
 	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 	padding: 2rem 0 8rem;
 	margin: 0 -1.6rem;
 	padding-left: 1.6rem;
@@ -38,11 +40,6 @@
 
 .doctors-container--cards::-webkit-scrollbar {
 	display: none;
-}
-
-.doctors-container--cards {
-	-ms-overflow-style: none;
-	scrollbar-width: none;
 }
 
 .doctors-container--button {
@@ -90,5 +87,4 @@
 	font-weight: 500;
 	line-height: 1.2rem;
 	color: #b0b0b0;
-	/* margin: 1rem 0; */
 }

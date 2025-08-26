@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles/DoctorHomeCard.css";
 
 export default function DoctorHomeCard({ doctor }) {
@@ -11,11 +12,10 @@ export default function DoctorHomeCard({ doctor }) {
 					<h3>{doctor.name}</h3>
 					<h4>{doctor.role}</h4>
 				</div>
-				<p>{doctor.description[0]}</p>
-				<p>{doctor.description[1]}</p>
+				<p>{doctor.description[2]}</p>
 			</div>
 			<div className="doctor-home-card--info-button">
-				<a href="#">View profile</a>
+				<Link to={`/doctors/${doctor.id}`}>View profile</Link>
 			</div>
 		</div>
 	);

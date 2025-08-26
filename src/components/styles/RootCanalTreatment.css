@@ -1,0 +1,17 @@
+.section-title--desktop {
+	display: none;
+}
+
+.root-canal-treatment--hero img {
+	padding: 0 2rem;
+	margin-top: 3rem;
+}
+
+.tooth-decay-treatment--timing,
+.root-canal-treatment--target-audience {
+	padding: 0 2rem;
+}
+
+.root-canal-treatment--target-audience {
+	margin-top: 8rem;
+}
