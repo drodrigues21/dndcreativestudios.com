@@ -67,18 +67,18 @@
 
 .community-withstar--pagination button {
 	font-family: var(--font-en-1);
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	font-weight: 500;
-	line-height: 1.8rem;
-	color: #bebebe;
+	line-height: 1.6rem;
+	color: #9a9a9a;
 	background: none;
 	border: none;
 }
 
 .community-withstar--pagination .prev,
 .community-withstar--pagination .next {
-	font-size: 2.5rem;
-	font-weight: 400;
+	font-size: 2rem;
+	font-weight: 500;
 	line-height: 2.5rem;
 	color: #323232;
 }
@@ -89,5 +89,6 @@
 }
 
 .community-withstar--pagination .page-button.is-active {
-	color: #000;
+	font-weight: 600;
+	color: #111;
 }

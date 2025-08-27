@@ -1,21 +1,32 @@
+import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
-import ContactLogin from "./ContactLogin";
+import UserLogin from "./UserLogin";
 import "../styles/Header.css";
 
-export default function Header() {
+export default function Header({ showLogo = true }) {
 	return (
 		<header id="header" className="main-header">
 			<div className="main-header--container">
-				<div className="main-header--logo main-header--logo-mobile">
-					<a href="#header">
+				{showLogo && (
+					<div className="main-header--logo-mobile">
+						<Link to="/">
+							<img
+								src="/assets/images/logo/logo.png"
+								alt="White Dream Dental Clinic Logo"
+							/>
+						</Link>
+					</div>
+				)}
+				<div className="main-header--logo main-header--logo-desktop">
+					<Link to="/">
 						<img
 							src="/assets/images/logo/logo.png"
 							alt="White Dream Dental Clinic Logo"
 						/>
-					</a>
+					</Link>
 				</div>
 				<Navbar />
-				<ContactLogin />
+				<UserLogin />
 			</div>
 		</header>
 	);

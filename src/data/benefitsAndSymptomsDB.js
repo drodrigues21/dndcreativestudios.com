@@ -246,3 +246,5 @@ export const benefitsDB = [
 		paths: ["/treatments/gum-disease-treatment"],
 	},
 ];
+
+export default benefitsDB;

@@ -306,3 +306,5 @@ export const squareCardsDB = [
 		paths: ["/treatments/gum-disease-treatment"],
 	},
 ];
+
+export default squareCardsDB;

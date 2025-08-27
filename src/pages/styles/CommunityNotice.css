@@ -43,6 +43,7 @@
 	line-height: 2.4rem;
 	text-align: left;
 	color: #252525;
+	margin: 0;
 }
 
 .community-notice--date {
@@ -159,24 +160,28 @@
 }
 
 /* Pagination */
-.notice-pagination {
+.community-notice--pagination {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 1.25rem;
-	padding: 2rem 0 6rem;
+	padding: 3rem 0 0;
 }
 
-.notice-pagination .page,
-.notice-pagination .nav {
+.community-notice--pagination .page,
+.community-notice--pagination .nav {
+	font-size: 1.6rem;
+	color: #9a9a9a;
 	background: transparent;
 	border: 0;
 	cursor: pointer;
-	font-size: 1.4rem;
-	color: #9a9a9a;
 }
 
-.notice-pagination .page.active {
+.community-notice--pagination .nav {
+	font-size: 2rem;
+}
+
+.community-notice--pagination .page.active {
+	font-weight: 600;
 	color: #111;
-	font-weight: 700;
 }

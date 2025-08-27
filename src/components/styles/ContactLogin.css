@@ -19,6 +19,10 @@
 	cursor: pointer;
 }
 
+.main-header--contact button:hover {
+	background-color: #07a8b1;
+}
+
 .main-header--login a {
 	font-family: "Poppins", sans-serif;
 	font-size: 1.6rem;
@@ -27,12 +31,20 @@
 	transition: all 300ms ease;
 }
 
-.main-header--contact button:hover {
-	background-color: #07a8b1;
+.main-header--login button {
+	font-family: "Poppins", sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	color: #ffffff;
+	background: none;
+	border: none;
+	transition: all 300ms ease;
+	cursor: pointer;
 }
 
-.main-header--login a:hover {
-	color: hsl(180, 31%, 94%);
+.main-header--login a:hover,
+.main-header--login button:hover {
+	color: hsl(180, 72%, 87%);
 }
 
 /* Mobile */

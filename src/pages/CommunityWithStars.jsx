@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { withStar } from "../data/withStar";
+import { useAuth } from "../contexts/AuthContext";
 import "./styles/CommunityWithStar.css";
 
 export default function CommunityWithStars() {
 	const ITEMS_PER_PAGE = 6;
 	const [currentPage, setCurrentPage] = useState(1);
+	const { isAuthenticated } = useAuth();
 	const totalPages = Math.ceil(withStar.length / ITEMS_PER_PAGE);
 	const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
 	const endIndex = startIndex + ITEMS_PER_PAGE;
@@ -57,14 +59,16 @@ export default function CommunityWithStars() {
 					</Link>
 				))}
 			</section>
-			<div className="community-withstar--add-wrapper">
-				<Link
-					className="community-withstar--add-button"
-					to="/community/with-star/new"
-				>
-					<span>+</span> 글쓰기
-				</Link>
-			</div>
+			{isAuthenticated && (
+				<div className="community-withstar--add-wrapper">
+					<Link
+						className="community-withstar--add-button"
+						to="/community/with-star/new"
+					>
+						<span>+</span> 글쓰기
+					</Link>
+				</div>
+			)}
 			<nav
 				className="community-withstar--pagination"
 				aria-label="With star pagination"

@@ -15,3 +15,5 @@ export const homeHeroImgDB = [
 		mobileImg: "/assets/images/mainpage/main_heroimg_mobile03.png",
 	},
 ];
+
+export default homeHeroImgDB;

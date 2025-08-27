@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import AppLayout from "../templates/app-layout";
 import Home from "../pages/Home";
 import DoctorsProfile from "../pages/DoctorsProfile";
@@ -32,6 +33,7 @@ import CommunityNoticeForm from "../components/CommunityNoticeForm";
 import CommunityWithStars from "../pages/CommunityWithStars";
 import CommunityWithStarForm from "../components/CommunityWithStarForm";
 import CommunityWithStarDetail from "../components/CommunityWithStarDetail";
+import LoginPage from "../components/global/LoginPage";
 
 export default function AppRouter() {
 	return (
@@ -99,6 +101,9 @@ export default function AppRouter() {
 						<Route path="with-star/new" element={<CommunityWithStarForm />} />
 						<Route path="with-star/:id" element={<CommunityWithStarDetail />} />
 					</Route>
+
+					{/* Login Page */}
+					<Route path="login" element={<LoginPage />} />
 
 					<Route path="*" element={<NotFound />} />
 				</Route>

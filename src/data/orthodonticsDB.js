@@ -42,3 +42,5 @@ export const orthodonticsDB = [
 		image: "/assets/images/orthodontics/openbite.png",
 	},
 ];
+
+export default orthodonticsDB;

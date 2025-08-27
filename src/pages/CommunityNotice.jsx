@@ -1,22 +1,17 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useAuth } from "../contexts/AuthContext";
 import { noticesDB } from "../data/noticesDB";
 import ArrowDown from "../assets/icons/arrow-down.svg";
 import ArrowUp from "../assets/icons/arrow-up.svg";
 import "./styles/CommunityNotice.css";
 
 export default function CommunityNotice() {
-	const [openIds, setOpenIds] = useState(
-		new Set(noticesDB[0] ? [noticesDB[0].id] : [])
-	);
+	const [openId, setOpenId] = useState(null);
+	const { isAuthenticated } = useAuth();
 
 	const toggleOpen = (id) => {
-		setOpenIds((prev) => {
-			const next = new Set(prev);
-			if (next.has(id)) next.delete(id);
-			else next.add(id);
-			return next;
-		});
+		setOpenId((prev) => (prev === id ? null : id));
 	};
 
 	return (
@@ -29,9 +24,9 @@ export default function CommunityNotice() {
 			<section className="community-notice--content">
 				<ul className="community-notice--list">
 					{noticesDB.map((item) => {
-						const isOpen = openIds.has(item.id);
+						const isOpen = openId === item.id;
 						return (
-							<div className="community-notice--item-wrapper">
+							<div className="community-notice--item-wrapper" key={item.id}>
 								<li
 									className={`community-notice--item${isOpen ? " open" : ""}`}
 									key={item.id}
@@ -41,9 +36,7 @@ export default function CommunityNotice() {
 										onClick={() => toggleOpen(item.id)}
 										aria-expanded={isOpen}
 									>
-										<span className="community-notice--title">
-											{item.title}
-										</span>
+										<h3 className="community-notice--title">{item.title}</h3>
 										<img
 											className="community-notice--arrow"
 											src={isOpen ? ArrowUp : ArrowDown}
@@ -68,14 +61,16 @@ export default function CommunityNotice() {
 						);
 					})}
 				</ul>
-				<div className="community-notice--add-button-wrapper">
-					<Link
-						to="/community/notice/new"
-						className="community-notice--add-button"
-					>
-						+ 글쓰기
-					</Link>
-				</div>
+				{isAuthenticated && (
+					<div className="community-notice--add-button-wrapper">
+						<Link
+							to="/community/notice/new"
+							className="community-notice--add-button"
+						>
+							+ 글쓰기
+						</Link>
+					</div>
+				)}
 				<nav className="community-notice--pagination" aria-label="pagination">
 					<button className="nav prev" aria-label="previous">
 						{"<"}

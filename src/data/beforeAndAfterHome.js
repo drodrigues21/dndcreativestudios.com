@@ -138,3 +138,5 @@ export const beforeAndAfterHomeDB = [
 		paths: ["/aesthetics/gum-aesthetics"],
 	},
 ];
+
+export default beforeAndAfterHomeDB;

@@ -252,3 +252,5 @@ export const recommendedDB = [
 		paths: ["/aesthetics/gum-aesthetics"],
 	},
 ];
+
+export default recommendedDB;

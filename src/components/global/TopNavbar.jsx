@@ -5,16 +5,16 @@ import {
 	findGroupByPath,
 	getActiveLinkForPath,
 } from "../../data/navGroups";
-import upArrow from "../../assets/icons/arrow-up.svg";
-import downArrow from "../../assets/icons/arrow-down.svg";
-import backArrow from "../../assets/icons/backArrow.png";
+// import upArrow from "../../assets/icons/arrow-up.svg";
+// import downArrow from "../../assets/icons/arrow-down.svg";
+// import backArrow from "../../assets/icons/backArrow.png";
 import "../styles/TopNavbar.css";
 
 const GROUPS = NAV_GROUPS;
 
 export default function TopNavbar() {
 	const { pathname } = useLocation();
-	const navigate = useNavigate();
+	// const navigate = useNavigate();
 	const [open, setOpen] = useState(false);
 	const rootRef = useRef(null);
 
@@ -26,36 +26,36 @@ export default function TopNavbar() {
 	);
 
 	// Close when clicking/touching outside the component
-	useEffect(() => {
-		function handlePointerDown(e) {
-			if (!open) return;
-			const container = rootRef.current;
-			if (!container) return;
-			if (container.contains(e.target)) return;
-			setOpen(false);
-		}
+	// useEffect(() => {
+	// 	function handlePointerDown(e) {
+	// 		if (!open) return;
+	// 		const container = rootRef.current;
+	// 		if (!container) return;
+	// 		if (container.contains(e.target)) return;
+	// 		setOpen(false);
+	// 	}
 
-		document.addEventListener("mousedown", handlePointerDown);
-		document.addEventListener("touchstart", handlePointerDown, {
-			passive: true,
-		});
-		return () => {
-			document.removeEventListener("mousedown", handlePointerDown);
-			document.removeEventListener("touchstart", handlePointerDown);
-		};
-	}, [open]);
+	// 	document.addEventListener("mousedown", handlePointerDown);
+	// 	document.addEventListener("touchstart", handlePointerDown, {
+	// 		passive: true,
+	// 	});
+	// 	return () => {
+	// 		document.removeEventListener("mousedown", handlePointerDown);
+	// 		document.removeEventListener("touchstart", handlePointerDown);
+	// 	};
+	// }, [open]);
 
 	// Close on route change (e.g., history back/forward or programmatic nav)
-	useEffect(() => {
-		setOpen(false);
-	}, [pathname]);
+	// useEffect(() => {
+	// 	setOpen(false);
+	// }, [pathname]);
 
 	// Ensure hooks run consistently before any conditional return
 	if (!group || !active) return null;
 
 	return (
 		<>
-			<div
+			{/* <div
 				ref={rootRef}
 				className="topnav-mobile"
 				aria-label={`${group.label} navigation`}
@@ -106,7 +106,7 @@ export default function TopNavbar() {
 						))}
 					</nav>
 				)}
-			</div>
+			</div> */}
 			{/* Pill list under the dropdown (sticky) */}
 			<div className="topnav-pills-sticky">
 				<div className="topnav-pills">
