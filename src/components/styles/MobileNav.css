@@ -241,6 +241,17 @@
 	justify-content: center;
 }
 
+.main-nav--mobile-login button {
+	font-family: var(--font-en-1);
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	color: #000000;
+	background: none;
+	border: none;
+	transition: all 300ms ease;
+	cursor: pointer;
+}
+
 .main-nav--mobile-login {
 	margin: 2rem 0 4rem;
 	padding: 2rem 2.7rem;
@@ -248,7 +259,7 @@
 
 .main-nav--mobile-login a,
 .main-nav--mobile-login span {
-	font-family: "Poppins", sans-serif;
+	font-family: var(--font-en-1);
 	font-size: 1.6rem;
 	line-height: 1.6rem;
 	color: #000000;

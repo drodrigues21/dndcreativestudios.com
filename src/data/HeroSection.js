@@ -154,3 +154,5 @@ export const heroSection = [
 		paths: ["/treatments/gum-disease-treatment"],
 	},
 ];
+
+export default heroSection;

@@ -41,3 +41,5 @@ export const noticesDB = [
 		content1: "시스템 안정화 작업 후 정상화 예정입니다.",
 	},
 ];
+
+export default noticesDB;

@@ -76,3 +76,5 @@ export function getActiveLinkForPath(group, pathname) {
 		) || group.links[0]
 	);
 }
+
+export default NAV_GROUPS;

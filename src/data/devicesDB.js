@@ -35,3 +35,5 @@ export const devices = [
 			"정밀한 진단을 위한 3D-CT 장비로 인체에 무해한 낮은 방사선량으로 임산부, 노약자 분들도 안심하고 진단 받을 수 있습니다.",
 	},
 ];
+
+export default devices;

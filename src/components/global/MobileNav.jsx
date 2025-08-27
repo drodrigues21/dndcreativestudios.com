@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
 import ConsultationForm from "./ConsultationForm";
 import OurPolicies from "./OurPolicies";
 import MessegeComfirmation from "./MessegeComfirmation";
@@ -10,7 +11,9 @@ import "../styles/Modal.css";
 import "../styles/MobileNav.css";
 
 export default function MobileNav() {
+	const { isAuthenticated, logout } = useAuth();
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const navigate = useNavigate();
 	const [openSubMenus, setOpenSubMenus] = useState({});
 	const [isConsultationModalOpen, setIsConsultationModalOpen] = useState(false);
 	const [isPoliciesModalOpen, setIsPoliciesModalOpen] = useState(false);
@@ -564,13 +567,20 @@ export default function MobileNav() {
 							</div>
 						</div>
 						<div className="main-nav--mobile-login">
-							<Link to="/" onClick={closeMenu}>
-								Login
-							</Link>
-							<span> / </span>
-							<Link to="/" onClick={closeMenu}>
-								Sign up
-							</Link>
+							{isAuthenticated ? (
+								<button
+									onClick={() => {
+										logout();
+										navigate("/");
+									}}
+								>
+									logout
+								</button>
+							) : (
+								<Link to="/login" onClick={closeMenu}>
+									Login / Sign Up
+								</Link>
+							)}
 						</div>
 					</div>
 				</div>

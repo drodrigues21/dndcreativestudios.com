@@ -164,3 +164,5 @@ export const stagesDB = [
 		paths: ["/treatments/wisdom-tooth-removal"],
 	},
 ];
+
+export default stagesDB;

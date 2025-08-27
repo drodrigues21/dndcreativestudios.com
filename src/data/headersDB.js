@@ -140,3 +140,5 @@ export const headersDB = [
 		paths: ["/treatments/gum-disease-treatment"],
 	},
 ];
+
+export default headersDB;

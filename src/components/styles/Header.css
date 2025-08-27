@@ -6,8 +6,12 @@
 	z-index: 10;
 }
 
-.main-header--logo {
+.main-header--logo-mobile {
 	padding: 3rem 1.5rem 2rem;
+}
+
+.main-header--logo-desktop {
+	display: none;
 }
 
 @media (min-width: 1000px) {
@@ -32,8 +36,13 @@
 		margin: 0 auto;
 	}
 
-	.main-header--logo {
-		padding: 0;
+	/* Show desktop logo and hide mobile logo on desktop */
+	.main-header--logo-desktop {
+		display: block;
+	}
+
+	.main-header--logo-mobile {
+		display: none;
 	}
 
 	.main-header--logo img {

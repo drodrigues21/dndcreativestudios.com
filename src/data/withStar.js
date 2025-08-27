@@ -118,3 +118,5 @@ export const withStar = [
 		imageDetail: "/assets/images/withstar/withstar_detail01.jpg",
 	},
 ];
+
+export default withStar;

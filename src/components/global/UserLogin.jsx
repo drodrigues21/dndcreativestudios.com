@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
 import ConsultationForm from "./ConsultationForm";
 import OurPolicies from "./OurPolicies";
 import MessegeComfirmation from "./MessegeComfirmation";
@@ -10,6 +11,8 @@ export default function ContactLogin() {
 	const [isConsultationModalOpen, setIsConsultationModalOpen] = useState(false);
 	const [isPoliciesModalOpen, setIsPoliciesModalOpen] = useState(false);
 	const [isConfirmationModalOpen, setIsConfirmationModalOpen] = useState(false);
+	const { isAuthenticated, logout } = useAuth();
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		if (
@@ -47,7 +50,18 @@ export default function ContactLogin() {
 					<button onClick={openConsultationModal}>빠른상담</button>
 				</div>
 				<div className="main-header--login">
-					<Link to="/login">login</Link>
+					{isAuthenticated ? (
+						<button
+							onClick={() => {
+								logout();
+								navigate("/");
+							}}
+						>
+							logout
+						</button>
+					) : (
+						<Link to="/login">login</Link>
+					)}
 				</div>
 			</div>
 

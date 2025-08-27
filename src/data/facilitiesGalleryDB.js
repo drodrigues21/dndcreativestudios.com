@@ -30,3 +30,5 @@ export const facilitiesGalleryDB = [
 		description: "300평의 넓은 대기 공간",
 	},
 ];
+
+export default facilitiesGalleryDB;
